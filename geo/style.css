@@ -1,0 +1,2010 @@
+﻿@font-face
+{
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue.eot');
+    src: url('fonts/BebasNeue.eot?#iefix') format('embedded-opentype'), url('fonts/BebasNeue.woff') format('woff'), url('fonts/BebasNeue.ttf') format('truetype'), url('fonts/BebasNeue.svg#BebasNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'oswaldbook';
+    src: url('fonts/oswald-regular-webfont.eot');
+    src: url('fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/oswald-regular-webfont.woff') format('woff'), url('fonts/oswald-regular-webfont.ttf') format('truetype'), url('fonts/oswald-regular-webfont.svg#oswaldbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** SKYPE HIJACK **/
+span.skype_c2c_textarea_span img.skype_c2c_logo_img
+{
+    display:none !important;
+}
+span.skype_c2c_textarea_span span.skype_c2c_text_span
+{
+    color: #f1a006 !important;
+    float: right !important;
+    font-family: 'BebasNeue' !important;
+    font-size: 42pt !important;
+    margin: -3px 0px 0px 10px !important;
+}
+
+body, html
+{
+    color: #343436;
+    font-family: arial;
+    font-size: 11pt;
+    font-weight: normal;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+body
+{
+    background-color: #ffffff;
+    background: url("img/bg-banner-base.png") -680px 195px repeat-x; /*url("img/bg-body-grey.png") -680px 1200px repeat-x;*/
+}
+img
+{
+    border: 0;
+}
+
+a[href^=tel]{
+    color:inherit;
+    text-decoration:none;
+}
+
+.clearBoth
+{
+    float: left;
+    clear: both;
+}
+.clearLeft
+{
+    float: left;
+    clear: left;
+}
+.clearRight
+{
+    float: right;
+    clear: right;
+}
+
+/*------------------------------------------------*/
+/*					Google MAP
+/*------------------------------------------------*/
+
+.mapTitle {
+	color: #ffffff; 
+	font-family:'BebasNeue'; 
+	font-size: 16pt; 
+	text-shadow: 2px 2px 5px #343436;
+}
+.mapTitle span { color:#f1a006; font-size: 20pt;  text-shadow: 2px 2px #003768; }
+
+#mapCanvas { width: 450px; height: 350px; }
+
+#transDiv { color: #fff; font-size: 15px; width: 200px; text-align: left; }
+#transDiv span { font-size: 20px; font-weight: 700;}
+
+#transDiv .div-out {
+	border-bottom: 5px solid #fffaf0;
+	overflow: hidden;
+	
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+	
+	-webkit-transition: -webkit-transform 0.3s 0.3s;
+	transition: transform 0.3s 0.3s;
+
+}
+
+#transDiv.hidden .div-out{
+	-webkit-transform: scale3d(0,1,1);
+	transform: scale3d(0,1,1);
+		
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+#transDiv .div-in {
+	background: rgba(0,55,104,0.95);
+	padding: 10px 20px;
+	
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	
+	-webkit-transition: -webkit-transform 0.3s;
+	-webkit-transition-delay: 0.5s;
+	transition: transform 0.3s;
+	transition-delay: 0.5s;
+}
+
+#transDiv.hidden .div-in {
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+
+}
+
+#theInfobox::after {
+	content: '';
+	bottom: -20px;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-color: transparent;
+	border-top-color: #003768;
+	border-width: 10px;
+	margin-left: -10px;
+	
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
+/*------------------------------------------------*/
+/*					End Google MAP
+/*------------------------------------------------*/
+
+.mainWrapper
+{
+    width: 1035px;
+    min-height: 600px;
+    margin: 10px auto 0px;
+    text-align: center;
+}
+
+
+.scroller {
+	background:#f1a306;
+    background: none repeat scroll 0 0 rgba(255, 156, 0, 0.8);
+    border-radius: 10px;
+    clear: both;
+    color: #fff;
+    height: 35px;
+    line-height: 25px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 5px;
+    position: absolute;
+    top: 87px;
+    width: 680px;
+}
+.scroller div.content{
+    display:inline;
+}
+
+.scroller span.yana {
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 36px;
+    margin-top: -2px;
+    width: 180px;
+}
+.scroller div.content{
+    display:block;
+    float: left;
+    width:425px;
+}
+.dmp_scrolling_leads span.dAmount{
+color:#013668;
+font-size: 25px;
+font-weight:bold;
+}
+	.dmp_scrolling_leads{
+	margin: 0 auto;
+    position: relative;
+    width: 1100px;
+	height:50px;
+	overflow:hidden;
+    display:inline;    
+	}
+	.dmp_scrolling_leads br{
+	display:none;
+	}
+	.dmp_scrolling_leads span{
+	
+	font-size: 18px;
+	}
+	
+	.dmp_scrolling_leads span.visitAge{
+	font-style:italic;
+	margin-left:20px;
+	font-size: 14px;
+	}
+		.slide{
+		width:100%;
+		height:50px;
+		}
+		.slide span{
+		display:inline;
+		width:200px;
+		margin: 0 auto;
+		}
+		}
+.mastHead
+{
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color: #ffffff;
+}
+.mhLogo
+{
+    width: 377px;
+    height: 75px;
+    float: left;
+}
+.mastHead .credLogos
+{
+    width: 28%;
+    float: right;
+    clear: right;
+    height: 62px;
+    margin: -30px 35px 0px 0px;
+}
+
+.mhPhone
+{
+    width: 465px;
+    height: 75px;
+    float: right;
+    margin: 0px 40px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BebasNeue';
+    font-size: 22pt;
+    font-weight: normal;
+    color: #f1a006;
+    line-height: 1;
+}
+.mhPhoneOuter, .mainPhoneMobile
+{
+    display: none;
+}
+.mhPhone span
+{
+    float: right;
+    color: #f1a006;
+}
+.mhPhone .ShowPhoneNumber
+{
+    float: right;
+    margin: -3px 0px 0px 10px;
+    font-size: 42pt;
+    color: #f1a006;
+}
+.mhPhoneHR
+{
+    display: none;
+}
+
+/*** BANNER ***/
+.banner
+{
+    width: 100%;
+    height: 607px;
+    float: left;
+    margin: 12px 0px 0px 0px;
+    background-image: url("img/bg-banner-top.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.banner h1
+{
+    width: 90%;
+    float: left;
+    margin: 35px 0px 0px 65px;
+    font-family: 'BebasNeue';
+    font-size: 37pt;
+    font-weight: normal;
+    line-height: 1.15;
+    text-align: left;
+    text-transform: uppercase;
+	text-decoration: underline;
+    text-shadow: 2px 2px 5px #343436;
+    color: #ffffff;
+}
+
+.banner .heroImg {
+    float: left;
+	margin: 0px 0px 0px 90px;
+}
+
+.banner .heroImg img{ z-index: 99;}
+
+.banner .bannerNews
+{
+    width: 873px;
+    height: 53px;
+    display: inline-block;
+    float: none;
+    margin: 50px auto 0px;
+    text-align: center;
+}
+.banner .bannerNewsMobile
+{
+    display:none;
+}
+
+/* SCROLLING LEADS WIDGET */
+.banner #scrolling-container
+{
+    width: 45%;
+    float: right;
+    margin: 6px 0px 0px 0px;
+}
+.banner #scrolling-container .image img, .banner #scrolling-container .image .text .date
+{
+    display: none;
+}
+.banner #scrolling-container .title
+{
+    width: 18%;
+    float: left;
+    margin: 0 3px 0 0;
+    color: #0f97ca;
+    font-family: "BebasNeue";
+    line-height: 23px;
+}
+.banner #scrolling-container .tickerIcon
+{
+    width: 1%;
+    float: left;
+    margin: 1px 5px 0 0;
+}
+#dmp_scrolling_leads
+{
+    width: 66%;
+    height: 18px;
+    float: left;
+    margin: 2px 0px 0px 10px;
+    color: #343436;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    overflow-y: hidden !important;
+}
+
+/* FORM STYLES */
+form#form
+{
+    width: 385px;
+    height: 390px;
+    position: absolute;
+    left: 50%;
+    top: 236px;
+    z-index: 100;
+    margin: 0px 0px 0px 60px;
+    background-color: #2d8ec4;
+    border: 2px solid #003768;
+}
+#form .top
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    color: #ffffff;
+    line-height: 1.25;
+    font-family: 'BebasNeue'; /*font-size: 15pt;*/
+    font-size: 20pt;
+    background-color: #0d4e78;
+}
+.top p
+{
+    float: left;
+    margin: 0px 0px 0px 10px;
+}
+#form .top .amt
+{
+    width: 110px;
+    height: 15px;
+    margin: 0px 1px 0px 3px;
+    padding: 1px 10px 1px 10px;
+    text-align: center;
+    border-radius: 3px;
+    color: #f1a006;
+    background: none repeat scroll 0 0 #ffffff;
+}
+#form .top span.locate
+{
+    color: #80d1f0;
+    font-size: 9pt;
+    vertical-align: baseline;
+}
+#form .top .slider-border
+{
+    width: 95%;
+    clear: left;
+    float: left;
+    margin: 10px 10px 0 5px;
+    border: 5px solid #0b749b;
+    border-radius: 5px;
+    background: rgb(191,194,197);
+    background: -moz-linear-gradient(top, rgba(191,194,197,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(191,194,197,1)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(191,194,197,1) 0%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(191,194,197,1) 0%,rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(191,194,197,1) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(191,194,197,1) 0%,rgba(255,255,255,1) 100%);
+}
+#form .top #slider
+{
+    width: 92%;
+    cursor: pointer;
+    height: 8px;
+    position: relative;
+}
+#form .top #slider .ui-slider-handle
+{
+    display: block;
+    width: 39px;
+    height: 16px;
+    background: url("img/slider-handle.png") no-repeat;
+    position: absolute;
+    top: -5px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.6);
+    outline-width: 0;
+    z-index: 1;
+    margin-left: -10px;
+}
+#form p.disclaimer
+{
+    width: 89%;
+    float: left;
+    clear: left;
+    margin: 15px 0px 10px 11px;
+    text-align: left;
+    line-height: 1.25;
+    font-size: 7pt;
+    font-weight: bold;
+}
+.formCklabel
+{
+    width: 270px;
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-family: arial;
+    font-size: 8pt;
+    font-weight: bold;
+    line-height: 13px;
+    margin-top: 4px;
+}
+.formInput
+{
+    width: 45.5%;
+    height: 19px;
+    float: left;
+    clear: none;
+    margin: 0px 0px 5px 5px;
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+    font-style: normal;
+    color: #000000;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.formSelect
+{
+    width: 48.5%;
+    height: 23px;
+    float: left;
+    clear: none;
+    margin: 0px 0px 5px 5px;
+    padding: 0px 3px 0px 3px;
+    font-size: 9pt;
+    font-style: normal;
+    color: #000000;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.formVerify .formImg
+{
+    border-radius: 3px;
+    margin: 0px 0px 3px -5px;
+    width: 60px;
+    height: 24px;
+}
+.formLeft
+{
+    float: left;
+}
+.formVerify
+{
+    margin: 0px 10px 0px 0;
+    width: 135px;
+}
+.formRight
+{
+    float: right;
+}
+.formVerify .formText
+{
+    width: 70px;
+    height: 18px;
+    margin: 0 0 3px;
+}
+.formText.formRight
+{
+    margin: -27px -5px 5px 0px;
+}
+.formText
+{
+    background: #ffffff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #000000;
+    width: 131px;
+}
+.formVerify .help
+{
+    color: #ffffff;
+    float: left;
+    font-size: 8pt;
+    margin: 0;
+}
+
+
+#form .formLowerDT
+{
+    display: block;
+}
+#form .formLowerMobile
+{
+    display: none;
+}
+.formLowerDT .formLeft
+{
+    float: left;
+    width: 50%;
+}
+.formLowerDT .formRight
+{
+    float: left;
+    width: 48%;
+}
+
+
+.checkBox
+{
+    width: 145px;
+    float: left;
+    margin: 0px 0px 0px 5px;
+}
+.formCheckBox
+{
+    width: 20px;
+    float: left;
+    height: 14px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 3px 0px 3px;
+    border: 2px solid #ffffff;
+}
+.formCheckLabel
+{
+    width: 120px;
+    float: left;
+    margin: 5px 0px 0px 5px;
+    padding: 0px 0px 0px 0px;
+    font-size: 8pt;
+    text-align:left;
+    color: #ffffff;
+}
+#form hr
+{
+    width: 93%;
+    float: left;
+    clear: both;
+    margin: 10px 0px 10px 15px;
+    padding: 0;
+    color: #329ac7;
+    opacity: 0.25;
+}
+.formBTN
+{
+    width: 48%;
+    float: left;
+    text-align: center;
+    padding: 0px 0px 0px 5px;
+}
+input[type="submit"].online
+{
+    width: 172px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "BebasNeue";
+    font-size: 24pt;
+    font-weight: normal;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    white-space: normal;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /*-webkit-box-shadow: -2px -2px 1px #ffffff inset;     box-shadow: -2px -2px 1px #ffffff inset;*/
+    background: rgb(241,160,6);
+    background: -moz-linear-gradient(top, rgba(241,160,6,1) 0%, rgba(246,193,8,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,160,6,1)), color-stop(100%,rgba(246,193,8,1)));
+    background: -webkit-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a006', endColorstr='#f6c108',GradientType=0 ); /* IE6-8 */
+    cursor: pointer;
+}
+.consent
+{
+    width: 95%;
+    float: left;
+    clear: left;
+    margin: 5px 0px 0px 10px;
+    font-size: 8pt;
+    line-height: 1.25;
+    text-align: left;
+    color: #ffffff;
+}
+#form a.already-started
+{
+    color: #f87509;
+    text-decoration: underline;
+}
+#form .credLogos
+{
+    width: 43%;
+    height: 75px;
+    float: left;
+    margin: 10px 0px 0px 0px;
+}
+#form .credLogos #eKomiSeal_default
+{
+    width: 100%;
+}
+#form .credLogos #eKomiSeal_5A7C3B39379AA97_eKomiSeal_default img
+{
+    margin: 0px 0 0;
+    width: 65px;
+}
+#eKomiWidget_default
+{
+    width: 163px;
+    height: 94px;
+    margin: 0px 0px 0px 15px;
+    border: 5px solid rgba(255,255,255,0.2);
+}
+#eKomiWidget_5A7C3B39379AA97_eKomiWidget_default img
+{
+    width: 163px;
+}
+/* END FORM STYLES */
+
+.heroImgTy {
+    height: 500px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 148px;
+    width: 489px;
+    z-index: 100;
+}
+
+/*** UPPER CONTENT ***/
+.contentWrap
+{
+    width: 91%;
+    height: 400px;
+    float: left;
+    margin: 20px 10px 0px 20px;
+    padding: 0 25px 0 25px;
+}
+.contentWrapTY
+{
+    width: 91%;
+    height: 300px;
+    float: left;
+    margin: 20px 10px 0px 20px;
+    padding: 0 25px 0 25px;
+}
+.contentWrap h1
+{
+    width: 100%;
+    float: right;
+    margin: 0 0 0 10px;
+    color: #f1a006;
+    font-family: 'BebasNeue';
+    font-size: 50pt;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.contentWrapTY h1
+{
+    width: 100%;
+    float: right;
+    margin: 0 0 0 10px;
+    color: #f1a006;
+    font-family: 'BebasNeue';
+    font-size: 30pt;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.contentWrap .heroImg
+{
+    float: left;
+    margin: 20px 0px 0px 5px;
+}
+.contentWrapTY .heroImg
+{
+    float: left;
+    margin: 20px 0px 0px 5px;
+}
+.howWeHelp
+{
+    width: 70%;
+    float: left;
+    margin: 20px 0px 0px 25px;
+}
+.howWeHelp .option
+{
+    width: 100%;
+    min-height: 10px;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #757575;
+}
+.howWeHelp p {
+    font-size: 14pt;
+    line-height: 1.25;
+    margin: 10px 0 20px -25px;
+    text-align: left;
+    width: 115%;
+}
+.howWeHelp .option .number
+{
+    width: 5%;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #016ac1;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.howWeHelp .option p
+{
+    width: 90%;
+    float: left;
+    margin: 5px 0px 0px 15px;
+    text-align: left;
+    font-size: 19pt;
+    color: #016ac1;
+}
+
+.lowerContent
+{
+    width: 91%;
+    min-height: 550px;
+    float: left;
+    margin: 20px 10px 0px 20px;
+    padding: 0 25px 0 25px;
+}
+.lowerContent h1
+{
+    width: 100%;
+    float: right;
+    margin: 0 0 0 10px;
+    color: #f1a006;
+    font-family: 'BebasNeue';
+    font-size: 50pt;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/*** TESTIMONIALS ***/
+.testimonialWrapper
+{
+    width: 100%;
+    float: left;
+    clear: left;
+    margin: 130px 20px 0px 0px;
+}
+.testimonial
+{
+    width: 30%;
+    min-height: 400px;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 16px 0px 15px;
+    background-color: #003768;
+}
+.testimonialAsterisk 
+{
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    margin: 70px 0px 0px 20px;
+    color: #6c6d6e;
+}
+.testimonialImg
+{
+    margin: -105px 0px 0px 0px;
+}
+.testimonialImg img
+{
+    border: 5px solid #ffffff;
+    -webkit-border-radius: 110px;
+    border-radius: 110px;
+}
+.testimonial p
+{
+    width: 90%;
+    min-height: 130px;
+    float: none;
+    display: inline-block;
+    margin: 20px auto 0px;
+    font-family: open sans;
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    color: #ffffff;
+}
+.testimonial .source
+{
+    width: 100%;
+    float: none;
+    margin: 20px 0px 0px 0px;
+    font-family: open sans;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+p.testimonialDisc 
+{
+  width: 98%;
+  float: left;
+  margin: 40px 0 0 20px;
+  color: #6c6d6e;
+  font-size: 9pt;
+  text-align: left;
+}
+.helpTitle
+{
+    width: 90%;
+    display: inline-block;
+    float: none;
+    margin: 20px 0 0;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-size: 15pt;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+}
+.testimonial p.helpAlert
+{
+    width: 90%;
+    min-height: 50px;
+    float: none;
+    display: inline-block;
+    margin: 20px auto 0px;
+    font-family: 'open sans';
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    color: #ffffff;
+}
+.formDebtBTN
+{
+    width: 90%;
+    float: left;
+    text-align: center;
+    padding: 0px auto 0px;
+}
+.formDebtSelect
+{
+    width: 93%;
+    height: 50px;
+    float: none;
+    display: inline-block;
+    margin: 0px auto 15px;
+    padding: 0px 3px 0px 3px;
+    font-size: 14pt;
+    font-style: normal;
+    color: #000000;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.formDebtInput
+{
+    width: 90%;
+    height: 50px;
+    float: none;
+    display: inline-block;
+    margin: 0px auto 15px;
+    padding: 0px 3px 0px 3px;
+    font-size: 14pt;
+    font-style: normal;
+    color: #000000;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.formDebtBTN input[type="submit"].online, .formDebtBTN a
+{
+text-decoration:none;
+    width: 265px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "BebasNeue";
+    font-size: 24pt;
+    font-weight: normal;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    white-space: normal;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /*-webkit-box-shadow: -2px -2px 1px #ffffff inset;     box-shadow: -2px -2px 1px #ffffff inset;*/
+    background: rgb(241,160,6);
+    background: -moz-linear-gradient(top, rgba(241,160,6,1) 0%, rgba(246,193,8,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,160,6,1)), color-stop(100%,rgba(246,193,8,1)));
+    background: -webkit-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,160,6,1) 0%,rgba(246,193,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1a006', endColorstr='#f6c108',GradientType=0 ); /* IE6-8 */
+    cursor: pointer;
+}
+#debtResult 
+{
+    display:none; 
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9000;
+    background-color:#343436;
+    opacity:0.8;
+    filter:alpha(opacity=80);   
+}
+#debtSavings 
+{
+    display:none; 
+    width:640px;
+    height:440px;
+    position:fixed;
+    top:15%;
+    left:50%;
+    z-index:9999;
+    margin:0px 0px 0px -320px;
+    padding:0px 0px 0px 0px;
+    background-color:#ffffff;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    opacity:1;
+  
+    border:3px solid #343436;
+}
+#debtSavings .debtSavingsLeft
+{
+    width:350px;
+    float:left;    
+}
+#debtSavings .debtSavingsLeft h2
+{
+    float:left;    
+    text-align:left;
+    margin: 10px 0px 20px 10px;
+    color:#3cb0f0;
+    font-family: "BebasNeue";
+    font-size: 30pt;
+}
+#debtSavings .debtSavingsLeft p
+{
+    min-height: 40px;
+    float:left;    
+    text-align:left;
+    margin: 10px 0px 20px 10px;
+    color: #676757;
+    font-size: 18pt;
+}
+#debtSavings #debtSavingsAmount
+{
+    color:#3cb0f0;
+    font-size: 19pt;
+}
+#debtSavings .ShowPhoneNumber
+{
+    float: left;
+    margin: 0px 0px 0px 10px;
+    font-size: 42pt;
+    font-family: "BebasNeue";
+    color: #f1a006;
+}
+#debtSavings .debtSavingsGirl
+{
+    float: right;
+    margin: 30px 0px 0px 0px;
+}
+#debtSavings .close 
+{
+    position:absolute;
+    top:0;
+    right:0;   
+    margin:-10px -10px 0px 0px; 
+}
+#debtSavings p.discSmall
+{
+    width: 98%;
+    float: left;
+    margin: -3px 0 0 8px;
+    padding: 10px 0 0;
+    font-size: 9pt;
+    font-family: arial;
+    text-align:left; 
+    color: #343436;
+    border-top: 1px solid #cfcfcf;
+}
+.debtConsult { 
+    width:300px; 
+    height:60px; 
+    display:block;
+    margin:0 0 0 15px; 
+    float:left; 
+    clear:left; 
+    line-height:63px; 
+    color:#fff; 
+    font-family:'BebasNeue';
+    font-size:32px;  
+    text-align:center; 
+    text-decoration:none; 
+    border:2px solid rgb(48,149,231); 
+    border-radius:4px; 
+    -moz-border-radius:4px; 
+    -webkit-border-radius:4px; 
+    box-shadow:0 1px 1px #fff inset;
+	background:rgb(48,149,231);
+	background:-moz-linear-gradient(top, rgba(48,149,231,1) 0%, rgba(62,182,242,1) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,149,231,1)), color-stop(100%,rgba(62,182,242,1)));
+	background:-webkit-linear-gradient(top, rgba(48,149,231,1) 0%,rgba(62,182,242,1) 100%);
+	background:-o-linear-gradient(top, rgba(48,149,231,1) 0%,rgba(62,182,242,1) 100%);
+	background:-ms-linear-gradient(top, rgba(48,149,231,1) 0%,rgba(62,182,242,1) 100%);
+	background:linear-gradient(to bottom, rgba(48,149,231,1) 0%,rgba(62,182,242,1) 100%);
+}
+
+.lcPhone
+{
+    width: 465px;
+    height: 75px;
+    float: none;
+    display: inline-block;
+    margin: 30px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'BebasNeue';
+    font-size: 22pt;
+    font-weight: normal;
+    color: #f1a006;
+    line-height: 1;
+}
+.lcPhone span
+{
+    float: left;
+    margin: 14px 10px 0px 0px;
+    color: #f1a006;
+}
+.lcPhone .ShowPhoneNumber
+{
+    float: left;
+    margin: 0px 0px 0px 10px;
+    font-size: 42pt;
+    color: #f1a006;
+}
+
+
+/* FOOTER STYLES */
+.footer
+{
+    width: 100%;
+    height: 197px;
+    display: inline-block;
+    margin: 0px auto 0px;
+    padding: 15px 0px 0px 0px;
+    font-size: 10pt;
+    text-align: center;
+    color: #ffffff;
+    background: url("img/bg-footer-top.png") center center no-repeat, url("img/bg-footer.png") left 56px repeat-x;
+}
+.footerCredibility
+{
+    width: 845px;
+    float: none;
+    margin: -9px auto 20px;
+    padding: 7px 0 2px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+.footWrapInner
+{
+    width: 1035px;
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+}
+.footCopyright
+{
+    width: 40%;
+    float: left;
+    margin: 0px 0px 0px 95px;
+    text-align: left;
+}
+.footAddress
+{
+    width: 43%;
+    float: left;
+    margin: 0px 75px 0px 0px;
+    text-align: right;
+}
+.footAdd
+{
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+.footSocMed
+{
+    width: 29%;
+    float: right;
+}
+.footSmIcon
+{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+.footWrapInner p
+{
+    width: 860px;
+    clear: left;
+    float: left;
+    margin: -5px 0px 0px 95px;
+    font-size: 8pt;
+    text-align: left;
+}
+.footer a, .footer a:active, .footer a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+
+.howWeHelp p.desktop 
+{
+    display:block;
+    float:left;    
+}
+.howWeHelp p.mobile 
+{
+    display:none;
+    float:left;    
+}
+
+
+/***** OLD IE STYLES *****/
+.ie8 body
+{
+    background-color: #ffffff;
+    background-position: left 144px;
+}
+.ie8 .mhPhone
+{
+    margin: 10px 10px 10px 0px;
+    font-size: 14pt;
+    letter-spacing: -1px;
+}
+.ie8 .banner
+{
+    margin: 16px 0px 0px 0px;
+}
+
+.ie8 .formCheckBox, .ie9 .formCheckBox
+{
+    width: 14px;
+    height: 16px;
+    margin: 2px 4px 5px 0px;
+    border: none;
+}
+.ie8 #form .top
+{
+    font-family: "arial";
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+.ie8 #form .top SPAN.locate
+{
+    color: #80d1f0;
+    font-size: 8pt;
+    vertical-align: baseline;
+}
+.ie8 .top P
+{
+    float: left;
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+}
+.ie8 INPUT[type='submit'].online
+{
+    font-family: "arial";
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+.ie9 input[type="submit"].online
+{
+    filter: none;
+}
+
+/***** ALL IE10 SPECIFIC STYLES *****/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+{
+    .formCheckBox
+    {
+        width: 14px;
+        height: 16px;
+        margin: 2px 4px 5px 0px;
+        border: none;
+    }
+    span.skype_c2c_textarea_span span.skype_c2c_text_span
+    {
+        margin: 0px 0px 0px 10px !important;
+    }
+    .mhPhone .ShowPhoneNumber
+    {
+        margin: 0px 0px 0px 10px;
+    }
+    .banner #scrolling-container .title 
+    {
+        margin: 1px 3px 0 0;
+    }
+    .banner #scrolling-container .tickerIcon 
+    {
+        margin: 4px 5px 0 0;
+    }
+    #dmp_scrolling_leads {
+        margin: 5px 0px 0px 10px;
+    }
+
+}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+
+ body
+{
+    background:url("img/mobile-bg-main.png") -680px 210px repeat-x;
+}
+ .mainWrapper
+{
+    width: 98%;
+}
+ .mhLogo
+{
+    width: 100%;
+    height: 60px;
+    margin: 0px auto 0px;
+    text-align: center;
+}
+ .mhLogo img
+{
+    width: 305px;
+}
+ .mhPhone,  .mainPhone
+{
+    display: none;
+}
+ .mhPhoneOuter
+{
+    display: block;
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    margin: 70px 0px 0px -48%;
+}
+ .mhPhoneOuter .mhPhoneMobile
+{
+    width: 90%;
+    height: 50px;
+    display: inline-block;
+    padding: 0px 0px 4px 2px;
+    background-color: #f1a306;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border:5px solid rgba(255,255,255,.5);
+}
+ .mhPhoneMobile .mhPhoneWrapper
+{
+    width: 100%;
+    height: 43px;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    margin: 4px auto 0px;
+}
+ .mhPhoneMobile .icon
+{
+    width: 20%;
+    height: 43px;
+    float: left;
+    margin: 5px 0px 0px 5px;
+    text-align: center;
+}
+ .mhPhoneMobile a.ShowPhoneNumber,  .mhPhoneMobile a.ShowPhoneNumber:active,  .mhPhoneMobile a.ShowPhoneNumber:visited
+{
+    width: 76%;
+    height: 43px;
+    float: left;
+    margin: 12px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'oswaldbook';
+    font-size: 20pt;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+ .mhPhoneMobile a.ShowPhoneNumber:hover
+{
+    text-decoration: none;
+}
+ .mhPhoneOuter p
+{
+    margin: -55px 0px 0px -48px;
+    font-family: oswaldbook;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+ .mhPhoneHR
+{
+    display: none;
+    width: 94%;
+    position: absolute;
+    top: 155px;
+    left: 2%;
+}
+ .mhPhoneHR hr
+{
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #dfdfdf;
+}
+ .mastHead .credLogos
+{
+    width: 100%;
+    height: 55px;
+    float: left;
+    margin: 85px 0px 0px 0px;
+}
+ .mastHead .credLogos img
+{
+    width: 65%;
+}
+ .cl-uw,  .cl-cfc,  .cl-ekomi
+{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+ .cl-bbb
+{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+.scroller {
+  background: none repeat scroll 0 0 rgba(255, 156, 0, 1);
+  border-radius: 10px;
+  clear: both;
+  color: #fff;
+  height: 50px;
+  line-height: 25px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 0px;
+  position: relative;
+  top: -9px;
+  width: 100%;
+  margin-bottom:-20px;
+}
+.dmp_scrolling_leads span {
+    font-size: 12px;
+}
+.dmp_scrolling_leads span.dAmount {
+  color: #013668;
+  font-size: 14px;
+  font-weight: bold;
+}
+.dmp_scrolling_leads span.visitAge {
+  font-size: 10px;
+  font-style: italic;
+  margin-left: 0px;
+  display:block;
+  margin-top:-15px;
+}
+.scroller span.yana {
+  font-size: 14px;
+  line-height: 12px;
+  margin-left: 12px;
+  margin-top: 9px;
+  text-align: left;
+  margin-bottom:-5px;
+}
+.scroller div.content {
+  display: block;
+  float: none;
+  width: 100%;
+}
+
+ .banner
+{
+    height: 405px;
+    margin: -8px 0px 0px 0px;
+    background-image: none;
+}
+
+.banner .heroImg {
+    float: left;
+	margin: 0px;
+	width: 100%;
+}
+#mapCanvas { margin: 5px; width: 96%; border: 2px solid #003768; }
+
+
+.thanks{display:none}
+ 
+.banner .bannerTitle {display: none;}
+
+.banner h1
+{
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 35px 0px 10px 0px;
+    font-family: 'oswaldbook';
+    font-size: 16pt;
+    font-weight: normal;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    /*text-shadow: 2px 2px 5px #343436;*/
+    text-shadow:none;
+    color: #ffffff;
+}
+
+ .banner .bannerNews
+{
+    display:none;
+}
+ .banner .bannerNewsMobile
+{
+   width: 103%;
+height: auto;
+display: block;
+margin: 5px 0px 0px -10px;
+background: none;
+top: 360px;
+position: relative;
+}
+ .banner #scrolling-container 
+{
+    display: none;
+}
+ form#form
+{
+    width: 95%;
+    height: 560px; /* float: left; */
+    position: absolute;
+    top: 720px;
+    left: 0%;
+    margin: 5px 5px 5px 5px;
+    background-color: #2d8ec4;
+}
+ #form .top .slider-border
+{
+    margin: 10px 10px 5px 3px;
+}
+ #form .formLowerDT 
+{
+    display: none;
+}
+ #form .formLowerMobile 
+{
+    display: block;
+}
+ #form .top p 
+{
+    font-size: 18pt;
+}
+ #form .top span.locate 
+{
+    font-size: 9pt;
+	display:block;
+	margin:5px;
+}
+ .formInput
+{
+    width: 94%;
+}
+ .formSelect
+{
+    width: 96%;
+}
+ .checkBox
+{
+    width: 95%;
+    margin: 0px 0px 0px 5px;
+}
+ .formCheckLabel
+{
+    width: 85%;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    font-size: 11pt;
+    color: #ffffff;
+    text-align: left;
+}
+ .formBTN
+{
+    width: 100%;
+}
+ input[type="submit"].online
+{
+    width: 225px;
+    height: auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: "BebasNeue";
+    font-size: 29pt;
+    margin: 15px auto 10px;
+    display: inline-block;
+}
+ #form .credLogos
+{
+    width:100%;
+    text-align: center;
+}
+ #eKomiWidget_default
+{
+    margin: 0px auto;
+    text-align: center;
+}
+ .tooltipster-base {
+    width:60% !important;
+    margin: 0px 0px 0px -230px !important;
+}
+ .contentWrap
+{
+    width: 100%;
+    height:370px;
+    float: left;
+    margin: 680px 20px 0px -15px;
+    background-image: url("img/image-hero-dt-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+ .contentWrap .startWorking
+{
+    display: none;
+}
+ .contentWrap h1
+{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    font-size: 14pt;
+    font-weight: normal;
+    text-transform: none;
+    color: #003768;
+    line-height: 1.25;
+}
+ .contentWrap .listItem
+{
+    width: 66%;
+    min-height: 10px;
+    float: left;
+    clear: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 2px 0px;
+    border: none;
+    background-color: transparent;
+}
+ .contentWrap .listItem .itemIcon
+{
+    display: none;
+}
+ .contentWrap .listItem p
+{
+    width: 90%;
+    float: left;
+    margin: 7px 0px 0px 0px;
+    font-family: arial;
+    font-style: normal;
+    font-size: 10pt;
+    text-align: left;
+    color: #343436;
+    font-weight: bold;
+    padding: 0px 0px 0px 15px;
+    text-transform: none;
+    background-image: url("img/icon-mobile-list.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+ .contentWrap .heroImg
+{
+    display:none;
+}
+ .contentWrap h1 
+{
+  width: 100%;
+  float: none;
+  display:inline-block;
+  margin: 0px 0px 0px 10px;
+  font-family: "BebasNeue";
+  font-size: 20pt;
+  font-weight: normal;
+  color: #f1a006;
+  text-align: left;
+  text-transform: uppercase;
+}
+ .howWeHelp 
+{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+ .howWeHelp .option 
+{
+    width: 100%;
+    min-height: 15px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
+ .howWeHelp .option .number {
+    width: 7%;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #016ac1;
+}
+ .howWeHelp .option p 
+{
+    width: 75%;
+    float: left;
+    clear: none;
+    margin: 2px 0px 0px 15px;
+    text-align: left;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+ .lowerContent
+{
+    width: 99%;
+    float: left;
+    margin: 20px 20px 10px -20px;
+}
+ .lowerContent h1 
+{
+    width: 100%;
+    float: none;
+    margin: 0 0 0 10px;
+    color: #f1a006;
+    font-family: 'BebasNeue';
+    font-size: 20pt;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+ .lowerContentTy .mainPhoneMobile
+{
+    display: block;
+    width: 95%;
+    font-size: 16pt;
+    font-family: 'oswaldbook';
+    text-transform: uppercase;
+}
+ .lowerContentTy .mainPhoneMobile a.ShowPhoneNumber,  .lowerContentTy .mainPhoneMobile a.ShowPhoneNumber:active,  .lowerContentTy .mainPhoneMobile a.ShowPhoneNumber:visited
+{
+    color: #003768;
+    text-decoration: none;
+}
+ .lowerContentTy .mainPhoneMobile a.ShowPhoneNumber:hover
+{
+    text-decoration: none;
+}
+ .testimonialWrapper
+{
+    width: 101%;
+    margin: 100px 0px 0px -20px;
+    padding: 10px 0px 0px 0px;
+    border:none;
+    background-image: none;
+}
+ .testimonial
+{
+    width: 100%;
+    min-height: 400px;
+    float: left;
+    margin: 0 16px 0 15px;
+    padding: 0;
+    background-color: #003768;
+}
+ .lowerContent .testimonialWrapper .testimonial.t1
+{
+    margin: 530px 0px 0px 15px !important;
+}
+ .lowerContent .testimonialWrapper .testimonial.t2
+{
+    margin: 120px 0px 0px 15px !important;
+}
+ .lowerContent .testimonialWrapper .testimonial.t3
+{
+    margin: -1445px 0px 0px 15px !important;
+}
+ .testimonial p
+{
+    width: 85%;
+    margin: 20px 0px 10px 20px;
+    font-size: 9pt;
+}
+ .testimonial .source
+{
+    width: 90%;
+    margin: 10px 0px 0px 18px;
+    font-size: 10pt;
+}
+
+ .formDebtBTN {
+    width: 96%;
+    float: left;
+    text-align: center;
+    padding: 0px auto 0px;
+}
+ .formDebtBTN input[type="submit"].online 
+{
+    width: 97%;
+    height: auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: "BebasNeue";
+    font-size: 29pt;
+    margin: 0px 0px 10px 12px;
+    display: inline-block;
+}
+ p.testimonialDisc {
+    width: 98%;
+    float: left;
+    margin: 40px 0 0 0px;
+    color: #6c6d6e;
+    font-size: 9pt;
+    text-align: left;
+}
+ .lcPhone 
+{
+    width: 100%;
+	margin: 70px 0px 10px 0px;
+}
+ .lcPhone span 
+{
+    width: 100%;
+    float: none;
+    display: inline-block;
+    margin: 14px auto 0px;
+    color: #f1a006;
+    text-align: center;
+}
+ .lcPhone .ShowPhoneNumber {
+    float: none;
+    display: inline-block;
+    margin: 0px auto 0px;
+    font-size: 35pt;
+    color: #f1a006;
+    text-align: center;
+}
+ span.skype_c2c_textarea_span span.skype_c2c_text_span {
+    width: 100% !important;
+    margin: -3px 0px 0px -5px !important;
+    display: inline-block !important;
+    color: #f1a006 !important;
+    font-family: 'BebasNeue' !important;
+    font-size: 35pt !important;
+    text-align: center !important;
+}
+ #debtSavings 
+{
+    width: 93%;
+    height: 440px;
+    top: 15%;
+    margin: 0px 0px 0px -48%;
+}
+ #debtSavings .debtSavingsGirl 
+{
+    display: none;
+}
+ #debtSavings .debtSavingsLeft,
+ #debtSavings .debtSavingsLeft h2,
+ #debtSavings .debtSavingsLeft p,
+ #debtSavings .ShowPhoneNumber
+{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 0px 0;
+}
+ #debtSavings .ShowPhoneNumber {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 0px 0;
+}
+ #debtSavings .debtSavingsLeft p
+{
+    width: 90%;
+    margin: 10px 0px 0px 5%;
+}
+ .debtConsult 
+{
+    width: 300px;
+    float:none;
+    display:inline-block;
+    margin: 10px 0 20px;
+}
+ #debtSavings p.discSmall 
+{
+    width: 95%;
+    font-size: 7pt;
+    border-top: none;
+}
+ .howWeHelp .chalkboard,  .footerCredibility
+{
+    display: none;
+}
+ .footer
+{
+    height: auto;
+    padding:15px 0px 20px 0px;
+    font-size: 8.5pt;
+    background: url("img/bg-footer.png") left top repeat-x;
+    background-color: #1f497d;
+} 
+ .footWrapInner,
+ .footCopyright, 
+ .footAddress
+{
+    width: 100%;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+ .footAdd 
+{
+    width: 100%;
+    float: left;
+    margin:-10px 0px 0px 0px;
+    text-align: center;
+} 
+ .footSocMed
+{
+    width: 100%;
+    float: left;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+ .footSmIcon 
+{
+    width: 24px;
+    height: 24px;
+    float: none;
+    margin: 0px 5px 0px 0px;
+    display: inline-block;
+}
+ .footWrapInner p 
+{
+    width: 93%;
+    clear: left;
+    float: left;
+    margin: 10px 0px 0px 11px;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.heroImgTy {
+  height: 500px;
+  left: 0;
+  
+
+  position: relative;
+  top: -335px;
+  width: 100%;
+  z-index: 100;
+}
+.heroImgTy img{
+width: 100%;
+max-width:350px;
+}
+.banner .heroImg.ca img {
+  height: 240px;
+  width: 100%;
+}
+.contentWrapTY {
+clear:both;
+width: 91%;
+height: 400px;
+float: none;
+display:block;
+position:relative;
+margin: 5px 8px 5px 5px;
+
+padding: 0 25px 0 25px;
+
+}
+.howWeHelp p.mobile {
+display: block;
+float: none;
+}
+.howWeHelp p.desktop {
+display: none;
+float: left;
+}
+.howWeHelp p {
+font-size: 11pt;
+}
+}

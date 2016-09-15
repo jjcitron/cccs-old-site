@@ -1,0 +1,54 @@
+.top p {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 40px;
+	padding-bottom: 70px;
+}
+
+.top p span {
+    color: #f1a606;
+    display:block;
+}
+.bottom {
+    background: none repeat scroll 0 0 rgba(0, 174, 230, 0.8);
+    color: #fff;
+    height: auto;
+    line-height: 30px;
+}
+
+
+
+.disclaimer span {
+    color: #20aee6;
+   
+}
+.bottom p {
+    font-size: 21px;
+    line-height: 36px;
+	color:#fff;
+	
+	 
+}
+
+
+
+.body {
+    background-image: url("../img/creditcard-debtconsolidation.jpg");
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+.top p {
+    font-size: 23px;
+	padding-bottom: 40px !important;
+}
+.bottom p {
+    font-size: 16px;
+	}
+.body {	
+	background-size: cover;
+	}
+}

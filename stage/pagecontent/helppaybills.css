@@ -1,0 +1,57 @@
+.top p {
+    font-size: 33px;
+    font-weight: 600;
+    padding-top: 25px;
+	padding-bottom: 25px;
+}
+.mid{font-size: 22px;}
+.bottom {
+  
+    height: auto;
+    line-height: 30px;
+}
+/*
+.arrow span{
+    background: #003768;
+	color:#f1a606;
+	}
+
+.tpoint {
+       border-right: 50px solid #003768;
+}	   
+.bpoint{
+ border-right: 50px solid #003768;
+ }
+*/
+.disclaimer span {
+    color: #00aeef;
+   
+}
+.bottom p {
+    font-size: 18px;
+    line-height: 36px;
+	
+	 padding: 50px 30px 0 0;
+}
+
+.theForm{background:#003768;}
+.footer{background:#000; color:#fff;}
+.body {
+    background-image: url("../img/helppaybills.jpg");
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+.top p {
+    font-size: 23px;
+}
+.bottom p {
+    font-size: 16px;
+	}
+.body {	
+	background-size: cover;
+	}
+}

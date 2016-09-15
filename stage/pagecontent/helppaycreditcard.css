@@ -1,0 +1,16 @@
+.top p {
+    font-size: 33px;
+    font-weight: 600;
+    padding-top: 25px;
+	padding-bottom: 25px;
+}
+.mid{font-size: 22px;}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+
+}

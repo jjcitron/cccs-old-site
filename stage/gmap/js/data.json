@@ -1,0 +1,49 @@
+{"pinLocations":[
+        {
+            "name":"Terri S.",
+			"ico":"img/pinF.png",
+			"content":"<div id='theInfobox'><div id='transDiv' class='hidden'><div class='div-out'><div class='div-in'><h2>Terri S.</br>Valrico, Florida</h2>Consolidated Credit has been amazing! They've made getting out of debt not so painful! Thank you!</div></div></div></div>",
+            "loc": {
+                "lat":27.941005,
+                "lng":-82.242542
+            }
+        },
+        {
+            "name":"Mary P.",
+			"ico":"img/pinF.png",
+			"content":"<div id='theInfobox'><div id='transDiv' class='hidden'><div class='div-out'><div class='div-in'><h2>Mary P.</br>Jacksonville, FL</h2>The best thing I ever did was calling Consolidated Credit! I paid off over $30K in three years</div></div></div></div>",
+            "loc": {
+                "lat":30.435179,
+                "lng":-81.734628
+            }
+        },
+		{
+			"name":"Jen D.",
+			"ico":"img/pinF.png",
+			"content":"<div id='theInfobox'><div id='transDiv' class='hidden'><div class='div-out'><div class='div-in'><h2>Jen D.</br>Pensacola, FL</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>",
+            "loc": {
+                "lat":30.421802,
+                "lng":-87.218320
+            }
+        },
+		{
+			"name":"Jim D.",
+			"ico":"img/pin.png",
+			"content":"<div id='theInfobox'><div id='transDiv' class='hidden'><div class='div-out'><div class='div-in'><h2>Jim D.</br>Orlando, FL</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div>",
+            "loc": {
+                "lat":28.537005,
+                "lng":-81.383284
+            }
+        },
+		{
+			"name":"John D.",
+			"ico":"img/pin.png",
+			"content":"<div id='theInfobox'><div id='transDiv' class='hidden'><div class='div-out'><div class='div-in'><h2>Jane D.</br>Miami, FL</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div></div>",
+            "loc": {
+                "lat":25.845137,
+                "lng":-80.152597
+            }
+        }
+	]
+}
+	

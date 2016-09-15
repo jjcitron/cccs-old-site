@@ -1,0 +1,56 @@
+.top p {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px;
+	padding-bottom: 20px;
+}
+.mid{background:#0eafeb;}
+.bottom {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: auto;
+    line-height: 30px;
+}
+.arrow span{
+    background: #f1a606;
+	color:#000;
+	}
+
+.tpoint {
+       border-right: 50px solid #f1a606;
+}	   
+.bpoint{
+ border-right: 50px solid #f1a606;
+ }
+ .footer{background:#00aeef;}
+
+.disclaimer span {
+    color: #000;
+   
+}
+.bottom p {
+    font-size: 21px;
+    line-height: 36px;
+	padding-bottom:40px;
+}
+
+
+
+.body {
+    background-image: url("../img/debtconsolidationprogram.jpg");
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+.top p {
+    font-size: 23px;
+}
+.bottom p {
+    font-size: 16px;
+	}
+.body {	
+	background-size: cover;
+	}
+}

@@ -1,0 +1,77 @@
+.top p {
+    font-size: 31px;
+    font-weight: 600;
+    padding-top: 40px;
+	padding-bottom: 70px;
+}
+.bottom {
+	background:#000;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: auto;
+    line-height: 30px;
+}
+.arrow span{
+    background: #f1a606;
+	}
+
+.tpoint {
+       border-right: 50px solid #f1a606;
+}	   
+.bpoint{
+ border-right: 50px solid #f1a606;
+ }
+ .footer{background:#00aeef;}
+
+.disclaimer span {
+    color: #000;
+   
+}
+.bottom p {
+    font-size: 21px;
+    line-height: 36px;
+	padding-bottom:40px;
+}
+
+
+
+.body {
+    background-image: url("../img/creditcounseling.jpg");
+}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 650px) {
+.top p {
+    font-size: 23px;
+	padding-bottom: 40px !important;
+}
+.bottom p {
+    font-size: 16px;
+	}
+.body {	
+	background-size: cover;
+	}
+	
+	.tpoint {
+    border-left: 30px solid transparent;
+    border-right: 30px solid #f1a606;
+    border-top: 30px solid transparent;
+    position: relative;
+    
+	-webkit-transform: skew(60deg);
+	transform: skew(60deg);
+}
+.bpoint {
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid #f1a606;
+    position: relative;
+    
+	-webkit-transform: skew(-60deg);
+	transform: skew(-60deg);
+}
+	
+	
+}

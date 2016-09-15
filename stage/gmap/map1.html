@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="css/map.css" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-gmS9gY_2KrqnKV0aCL2PzcUPMPA88n0"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/infobox.js"></script>
+
+<script type="text/javascript">
+
+	var theCenter = new google.maps.LatLng(28.058168, -82.481698);
+	
+	function CenterControl(controlDiv, map) {
+
+	  // Set CSS for the control border
+	  var controlUI = document.createElement('div');
+	  controlUI.style.backgroundColor = '#003666';
+	  controlUI.style.border = '2px solid #fffaf0';
+	  controlUI.style.borderRadius = '5px';
+	  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+	  controlUI.style.cursor = 'pointer';
+	  controlUI.style.marginRight = '5px';
+	  controlUI.style.marginTop = '5px';
+	  controlUI.style.textAlign = 'center';
+	  controlUI.title = 'Click to recenter the map';
+	  controlDiv.appendChild(controlUI);
+
+	  // Set CSS for the control interior
+	  var controlText = document.createElement('div');
+	  controlText.style.color = '#fffaf0';
+	  controlText.style.fontSize = '16px';
+	  controlText.style.lineHeight = '35px';
+	  controlText.style.paddingLeft = '5px';
+	  controlText.style.paddingRight = '5px';
+	  controlText.innerHTML = 'Reset';
+	  controlUI.appendChild(controlText);
+
+	  // Setup the click event listeners: simply set the map to
+	  // Chicago
+	  google.maps.event.addDomListener(controlUI, 'click', function() {
+		map.setCenter(theCenter)
+	  });
+
+	}
+	
+function initialize() {
+
+    var style = [
+		{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},
+		{"featureType":"road","stylers":[{"saturation":-70}]},
+		{"featureType":"transit","stylers":[{"visibility":"off"}]},
+		{"featureType":"poi","stylers":[{"visibility":"off"}]},
+		{"featureType":"water","stylers":[{"visibility":"simplified"},{"color":"#22b9f0"}]}
+	],
+
+	
+	mapOptions = {
+		mapTypeControlOptions: {
+			mapTypeIds: [google.maps.MapTypeId.ROADMAP, "Styled"] 
+		},
+		backgroundColor: '#22b9f0',
+		zoom: 6,//Need to make dynamic based on location FL, NY etc.
+		//center: new google.maps.LatLng(28.058168, -82.481698), //Need to make dynamic based on location FL, NY etc. 
+		disableDefaultUI: true,
+		disableDoubleClickZoom: true,
+		scrollwheel: false
+	},
+	
+	map = new google.maps.Map(document.getElementById("mapCanvas"), mapOptions),
+		styledMapType = new google.maps.StyledMapType(style, {name: "Styled"});
+		map.mapTypes.set("Styled", styledMapType);
+		map.setMapTypeId('Styled');
+		map.setCenter(theCenter);
+
+		
+	var centerControlDiv = document.createElement('div');
+	var centerControl = new CenterControl(centerControlDiv, map);
+	
+	 centerControlDiv.index = 1;
+	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
+
+
+	dropPins(map, theData);
+}
+
+	$.getJSON('js/data.json', function(json){
+		theData = json;
+	});
+	
+function dropPins(map, locations){
+ 
+	//var pin = 'pin.png'; 
+	var theContentString = [];
+	var marker = [];
+	
+	for (var i = 0; i < locations.pinLocations.length; i++) {
+	
+		var person = locations.pinLocations[i];
+		var LatLng = new google.maps.LatLng(locations.pinLocations[i].loc.lat, locations.pinLocations[i].loc.lng);
+	
+		marker[i] = new google.maps.Marker({
+			map: map,
+			position: LatLng,
+			visible: true,
+			draggable:false,
+			animation: google.maps.Animation.DROP,
+			//icon: pin,
+			icon: locations.pinLocations[i].ico,
+			title: locations.pinLocations[i].name
+		});
+	
+		theContentString[i]= locations.pinLocations[i].content;
+
+		var boxOptions = {
+			alignBottom: true,
+			pixelOffset: new google.maps.Size(-150, -50),
+			boxStyle: { width: "300px" },
+			closeBoxMargin: "",
+			closeBoxURL: "img/close.png",
+			infoBoxClearance: new google.maps.Size(100, 100),
+		};
+		
+		var infobox = new InfoBox(boxOptions);
+		google.maps.event.addListener(marker[i], 'click', Callback(map, theContentString[i], i));	
+	}
+
+	function Callback(m, cs, n) {
+		return function() {
+			infobox.setContent(cs);
+			infobox.open(map, this);
+			Animate();
+        };
+	}
+	
+	function Animate() {
+		setTimeout(function() { //Timeout to load InfoBox first !Important 
+		if(document.getElementById("transDiv").className == "hidden"){
+			document.getElementById("transDiv").className = "";		
+			}
+			else{ document.getElementById("transDiv").className = "hidden";	}
+		}, 75);
+	}
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<title>InfoBox W/CSS Transitions</title>
+</head>
+
+<body>
+<div id="mapCanvas"></div>
+
+<!--div class="hide">
+    <div id="theInfobox">
+		<div id="transDiv" class="hidden" >
+		<div class="div-out">
+			<div class="div-in"><h2>John Doe</h2> Got helped with $30,000 in debt.</div>
+			<div class="div-in">Testimonial goes here!!</div>
+		</div>
+		</div>
+    </div>
+</div-->
+
+</body>
+</html>
