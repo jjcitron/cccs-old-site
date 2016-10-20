@@ -69,7 +69,6 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 	?>
 	<!-- Scripts -->
 	<script type="text/javascript" src="geo/scripts/main.js"></script>
-
 </head>
 
 

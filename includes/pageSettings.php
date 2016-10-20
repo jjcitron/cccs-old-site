@@ -249,6 +249,3 @@ if(isset($json->{$partnerid})){
 $thePhoneNumber = $json->{$partnerid};
 }
 ?>
-
-
-

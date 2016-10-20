@@ -87,5 +87,4 @@ $thankYouPage ='geo_thanks-'.$location;
 if($detect->isMobile()){
 	$thankYouPage = $thankYouPage.'?mobile';
 }
-
 ?>

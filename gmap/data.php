@@ -2,7 +2,6 @@
 
 <?php
 
-
 function set_file(){
 	$aLocFile;
 	//$location = explode('-', $_GET['loc']);
