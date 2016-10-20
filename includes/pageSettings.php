@@ -1,5 +1,9 @@
 <?php
-
+/*
+echo '<pre>';
+print_r($_SERVER);
+echo '</pre>';
+*/
 function setParams($p){
 	if(isset($_COOKIE[$p ."Cookie"])&&!(isset($_GET[$p]))){
 		$v = $_COOKIE[$p ."Cookie"];
@@ -10,7 +14,7 @@ function setParams($p){
 	return $v;
 }
 
-/*Get some info about the page we are on */
+/*Get some info about the page we are on 
 	$currentFile = $_SERVER["REQUEST_URI"];
 	$parts = Explode('/', $currentFile);
 	$currentPage = $parts[count($parts) - 1];
@@ -18,7 +22,9 @@ function setParams($p){
 	
 	if(strpos($currentPage, '?')>1){
 		$currentPage  = substr($currentPage, 0, strpos($currentPage, '?'));
-	}
+	}*/
+	
+	$currentPage = str_replace('/','',$_SERVER['REDIRECT_URL']);
 	//var_dump($location);
 	//For local testing
 	$fullURL = explode('?', 'http://' .$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);

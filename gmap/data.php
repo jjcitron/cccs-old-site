@@ -1,12 +1,13 @@
 <?php header('Content-Type: application/javascript');?>
 
 <?php
-include('../includes/pageSettings.php'); 
+
 
 function set_file(){
 	$aLocFile;
-	$location = explode('-', $_GET['loc']);
-	$location = $location[1];
+	//$location = explode('-', $_GET['loc']);
+	//$location = $location[1];
+	$location = str_replace('local-','',$_GET['loc']);
 	
 	switch ($location){	
 	case 'california.php':
@@ -89,7 +90,7 @@ return $data;
 $contentOpen = "<div id=\'theInfobox\'><div id=\'transDiv\' class=\'hidden\'><div class=\'div-out\'><div class=\'div-in\'>";
 $contentClose = "</div></div></div></div>";
 
-if($lang=='es'){$helpTxt = "Fue Ayudado Con:";}else{$helpTxt = "Got Help With:";}
+if($_GET['lang']=='es'){$helpTxt = "Fue Ayudado Con:";}else{$helpTxt = "Got Help With:";}
 
 $thedata = csv_to_array(set_file(), ',');
 

@@ -58,7 +58,7 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 	<!--Google Map-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-gmS9gY_2KrqnKV0aCL2PzcUPMPA88n0"></script>
 	<script type="text/javascript" src="gmap/js/infobox.js"></script>
-	<script type="text/javascript" src="gmap/data.php?loc=<?php echo $currentPage;?>"></script>
+	<script type="text/javascript" src="gmap/data.php?loc=<?php echo $currentPage;?>&lang=<?php echo $lang;?>"></script>
 	<script>var thelocations = theData;</script>
 	
 	<!-- eKomiLoader START, only needed once per page -->

@@ -3,6 +3,8 @@
 $location = explode('-', $currentPage);
 $location = $location[1];
 
+//echo $currentPage;
+
 switch($location){
 	
 	//case 'florida.php':
