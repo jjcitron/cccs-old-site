@@ -1,9 +1,9 @@
 <?php
-/*
+
 echo '<pre>';
 print_r($_SERVER);
 echo '</pre>';
-*/
+
 
 function setParams($p){
 	if(isset($_COOKIE[$p ."Cookie"])&&!(isset($_GET[$p]))){
