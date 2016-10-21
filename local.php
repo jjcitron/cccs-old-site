@@ -45,9 +45,6 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 
 	<link rel="shortcut icon" href="http://www.consolidatedcredit.org/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="geo/default.css"/>
-	
-
-	
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="geo/scripts/jquery-1.9.1.min.js"><\/script>')</script>
@@ -57,7 +54,7 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 	<!--Google Map-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-gmS9gY_2KrqnKV0aCL2PzcUPMPA88n0"></script>
 	<script type="text/javascript" src="gmap/js/infobox.js"></script>
-	<script type="text/javascript" src="gmap/data.php?loc=<?php echo $currentPage;?>&lang=<?php echo $lang;?>"></script>
+	<script type="text/javascript" src="gmap/data.php?loc=<?php echo 'local-'.$location;?>&lang=<?php echo $lang;?>"></script>
 	<script>var thelocations = theData;</script>
 	
 	<!-- eKomiLoader START, only needed once per page -->
