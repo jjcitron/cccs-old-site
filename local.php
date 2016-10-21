@@ -90,6 +90,10 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 				<p class="ShowPhoneNumber"><?php echo $thePhoneNumber;?></p></div>
 			</a>
 			<div class="eKomi"><img id="eKomi_custom" src="" alt="Loading..."/></div>
+			<!-- eKomiSeal START -->
+			<div id="eKomiSeal_default" style="display:none;"></div>
+			<!-- eKomiSeal END -->
+			
 			<div class="language">
 				<!--?php if($lang=='es'){ echo '<a href="'.$currentPage.'?lang=en" onclick="aitrkClick(\'languageSwitched_en\')">Inglés</a>'; }
 					else{ echo'<a href="'.$currentPage.'?lang=es" onclick="aitrkClick(\'languageSwitched_es\')">Español</a>'; }
