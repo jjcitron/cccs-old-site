@@ -7,8 +7,6 @@ error_reporting(-1);
 require_once ('includes/Mobile_Detect.php');
 $detect = new Mobile_Detect;
 include('includes/pageSettings.php'); 	
-
-
 include('includes/GEOpageContentSettings.php'); 
 
 if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
