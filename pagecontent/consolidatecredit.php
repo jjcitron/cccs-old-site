@@ -1,6 +1,6 @@
 <?php
 
-$top = '<div class="top"><p>Consolidate your credit card bills into one lower payment.  Reduce your total credit card payments by up to <span>30% to 50% .</span></p></div>';
+$top = '<div class="top"><p>Consolidate your credit card bills into one lower payment. Reduce your total credit card payments by up to <span>30% to 50%.</span></p></div>';
 $mid = '';
 $arrow = '<div class="arrow">
 		<span>We can help you...

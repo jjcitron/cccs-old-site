@@ -1,6 +1,6 @@
 <?php
 
-$top = '<div class="top"><p>Consolidate your bills into one lower payment.  Reduce your total payments by up to  <span>30% to 50% through debt consolidation.</span></p></div>';
+$top = '<div class="top"><p>Consolidate your bills into one lower payment. Reduce your total payments by up to <span style="display:inline;">30% to 50%.</span></p></div>';
 $mid = '';
 $arrow = '<div class="arrow">
 		<span>We can help you...

@@ -1,8 +1,7 @@
 <?php
 
 $top = '<div class="top"><p>Consolidate your bills into one lower payment. 
-Reduce your total payments by up to <span>30% to 50% 
-through credit counseling.</span></p></div>';
+Reduce your total payments by up to <span>30% to 50%.</span></p></div>';
 $mid = '';
 $arrow = '<div class="arrow">
 		<span>With Credit Counseling, You Can...

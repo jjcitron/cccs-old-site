@@ -1,7 +1,7 @@
 <?php
 
-$top = '<div class="top"><p>Looking for a Debt Consolidation program?  We are a debt consolidation company that has helped over 5 million people just like you.  </p></div>';
-$mid = '<div class="mid"><p>Consolidate your bills into one lower payment.  Reduce your total payments by up to <span>30% to 50%</span> <br/> through debt consolidation.</p></div>';
+$top = '<div class="top"><p>Looking for a Debt Consolidation program? We are a debt consolidation company that has helped over 5 million people just like you.  </p></div>';
+$mid = '<div class="mid"><p>Consolidate your bills into one lower payment. Reduce your total payments by up to <span>30% to 50%</span>.</p></div>';
 $arrow = '<div class="arrow">
 		<span>We can help you...
 		<div class="point">
