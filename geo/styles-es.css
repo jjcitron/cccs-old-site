@@ -544,7 +544,7 @@ select.lang {
     right: 0;
     float: left;
     width: 400px;
-    height: 425px;
+    height: 500px;
 	margin-left:20px;
 	border-radius:5px;
 	position: relative;
@@ -716,7 +716,7 @@ input[type="submit"].online{
     cursor: pointer;
 }
 .consent{  
-    font-size: 8pt;
+    font-size: 7pt;
     color: #ffffff;
 	padding:10px 0;
 }
