@@ -121,8 +121,7 @@
 				
             </div>
 			<div class="consent" >Al enviar la información que se muestra arriba, usted autoriza mediante su firma electrónica a: Recibir llamadas de Consolidated Credit a través de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas estándar de celulares pueden ser aplicadas) a mi número residencial o celular, a través de llamadas realizadas en forma manual o mediante marcador automático. Yo entiendo que no estoy bajo ninguna obligación de comprar nada.</div>
-			<br style="clear:both">
-			<div class="eKomi" id="eKomiWidget_default" style="top:142px"></div>
+			<div class="eKomi" id="eKomiWidget_default" ></div>
         </div>
 
         <input type="hidden" id="debtamount" name="debtamount" value="7000" />
