@@ -1,0 +1,11 @@
+﻿input, select
+{
+    display:block;
+    clear:both;
+    width: 150px;
+}
+
+select 
+{
+    width: 156px;
+}

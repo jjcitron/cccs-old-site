@@ -15,7 +15,8 @@ exit;
 }
 //clean up the phone number
 $phone_home = preg_replace('/[^0-9]/','',$phone_home);
-$phone_work = preg_replace('/[^0-9]/','',$phone_work);
+if ( isset($phone_work) )
+  $phone_work = preg_replace('/[^0-9]/','',$phone_work);
 if(strlen($phone_home)> 10||strlen($phone_home)< 10){
 	echo'{ "Status": "Fail: Bad Phone number" }1';
 	exit;
@@ -38,7 +39,6 @@ $fields = array(
 						'state' => urlencode($state),
 						'debtamount' => urlencode($debtamount),
 						'phone_home' => urlencode($phone_home),
-						'phone_work' => urlencode($phone_work),
 						'language' => urlencode($language),
 						'optout'=>'false',
 						'submissionurl'=> urlencode($submissionurl),
@@ -50,7 +50,9 @@ $fields = array(
 						'ppc_adtag'=>urlencode($ppc_adtag),
 						'ckm_campaign_id'=>urlencode($ckm_campaign_id),
 						'ckm_key'=>urlencode($ckm_key)
-				);
+          );
+if (isset($phone_work))
+  $fields['phone_work'] = urlencode($phone_work);
 $fields_string = '';
 //url-ify the data for the POST
 foreach($fields as $key=>$value) { 
