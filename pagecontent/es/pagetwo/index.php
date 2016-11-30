@@ -1,4 +1,8 @@
+<?php
+include($_SERVER['DOCUMENT_ROOT'].'/includes/pageSettings.php');
+$thankYouPage = $currentDir.'thankyou.php'
 
+?>
 
 <!DOCTYPE html>
 <!--[if IE 8 ]>    <html class="ie8" lang="en-US"> <![endif]-->
@@ -11,19 +15,17 @@
     <meta name="description" content="" />
     <meta name="keywords"  content="" />
     <meta name="robots"  content="" />
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8" /> 
     <meta name="viewport"  content="width=device-width, initial-scale=1, maximun-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link href="content/Common.css" rel="stylesheet" type="text/css" />
     <link href="content/themes/Landing-Page-Campaign/Campaign.css" rel="stylesheet" type="text/css" />
     <link type="image/x-icon" href="content/themes/base/images/favicon.ico" rel="shortcut icon">
-    <script src="Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="Scripts/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="Scripts/jquery.tooltipster.min.js" type="text/javascript"></script>
-    <script src="Scripts/placeholder.js" type="text/javascript"></script>
-    <script src="Scripts/CommonMarketingSpanish.js?ver=1.0" type="text/javascript"></script>
-    <script src="content/themes/Landing-Page-Campaign/Campaign.js" type="text/javascript"></script>
-    <script src="http://tools.consolidatedcredit.org/Javascript905/LoadScript?partnerid=2106" type="text/javascript"></script>
+    <script src="../../../js/modernizr.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
     <!-- Begin Google Analytics-->
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -100,7 +102,7 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
         <div class="logo-cred"><img src="content/themes/ppc-sindeudas/logo-cred-2.png"/></div></div>
         <div class="phoneContainer">
         <div class="phoneIntro">Llámanos al</div>
-        <div class="phone">    <span class="ShowPhoneNumber"></span>
+        <div class="phone">   <span><?php echo $thePhoneNumber ?></span>
 <script type="text/javascript">
 
     if ($(window).width() >= 641) {
@@ -108,7 +110,7 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
             setTimeout(function(){
 
                 $(".ShowPhoneNumber").removeAttr("href");
-            }, 
+            },
             2000);
 
         })
@@ -149,7 +151,7 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
             </div>
             <div class="st-col2">
                 <h1>Obt&eacute;n tu consulta de deuda gratis, y analiza tus opciones</h1>
-                <form class="formsteps" method="post" usetooltips="false" id="form">
+                <form class="formsteps" usetooltips="false" method="post" id="form">
                     <div class="col1">
                         <div>
                             <h3>Correo Electrónico</h3>
@@ -436,49 +438,145 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
                         <div class="subcol2">
                             <div>
                                 <h3>Nombre </h3>
-                                <input type="text" id="first_name" name="first_name" />
+                                <input type="text" id="first_name" name="firstname" />
                             </div>
                             <div>
                                 <h3>Apellido </h3>
-                                <input type="text" id="last_name" name="last_name" />
+                                <input type="text" id="last_name" name="lastname" />
                             </div>
                         </div>
                         <div class="subcol3">
                             <div>
                                 <h3>Tel&eacute;fono  </h3>
-                                <input type="text" id="primary_phone" name="primary_phone" maxlength="10"/>
+                                <input type="text" id="primary_phone" name="phone_home" maxlength="10"/>
                             </div>
                             <div>
                                 <h3>C&oacute;digo postal </h3>
                                 <input type="text" id="zip" name="zip"  maxlength="5" />
                             </div>
                         </div>
-                        <div class="btnsubmit"><input id="submitButton" type="submit" value="" name="submitButton" class="online" /></div>
+                        <div class="btnsubmit"><input id="submitButton" type="submit" value="" name="submitButton" class="online" ></div>
                         <div class="msg">&iquest;Ya hab&iacute;as comenzado? <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Contin&uacute;a aqu&iacute;</a></div>
                     </div>
 
 <div class="btnDisclaimer">Al enviar la información que se muestra arriba, usted autoriza mediante su firma electrónica a: Recibir llamadas de Consolidated Credit a través de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas estándar de celulares pueden ser aplicadas) a mi número residencial o celular, a través de llamadas realizadas en forma manual o mediante marcador automático. Yo entiendo que no estoy bajo ninguna obligación de comprar nada.</div>
-                    
-                    <input type="hidden" id="pid" name="pid" value="2106" />
-                    <input type="hidden" id="country" name="country" value="USA" />
-                    <input type="hidden" id="language" name="language" value="sp" />
-                    <input type="hidden" id="thank_you_url" name="thank_you_url" value="/general-thank-you-es/" />                           
-                    <input type="hidden" id="channel" name="channel" value="" />
-                  
-                    <input type="hidden" id="ckm_campaign_id" name="ckm_campaign_id" value="4732" />
-                    <input type="hidden" id="ckm_key" name="ckm_key" value="TOcL08G6kb8" />
-                    <input type="hidden" id="ckm_request_id" name="ckm_request_id" value="" />
-                    <input type="hidden" id="APIKey" name="APIKey" value="p3nsT6J9Nnp6nr8vdnEd1IMw5Ed2Z51a" />
-                    <input type="hidden" id="api_type" name="api_type" value="marketing" />
-                    <input type="hidden" id="vid" name="vid" value="107" />
-                    <input type="hidden" id="ckm_subid" name="ckm_subid" value="2106" />
-                    <input type="hidden" id="ckm_subid_2" name="ckm_subid_2" value="" />
-                    <input type="hidden" id="ckm_subid_3" name="ckm_subid_3" value="" />
-                    <input type="hidden" id="ckm_subid_4" name="ckm_subid_4" value="" />
-                    <input type="hidden" id="ckm_subid_5" name="ckm_subid_5" value="" />
-                    <input type="hidden" id="aff_id" name="aff_id" value="1242" />
-                    <input type="hidden" id="route_type" name="route_type" value="data_direct" />
-                    
+		<input type="hidden" name="SuccessURL" value="<?php echo $thankYouPage;?>" />  
+		<input type="hidden" name="submissionurl" value="<?php echo $submissionurl;?>" /> 
+		<input type="hidden" name="partnerid" value="<?php echo $partnerid;?>" />  		
+		<input type="hidden" name="ppc_keyword" value="<?php echo $ppc_keyword;?>" />  
+		<input type="hidden" name="ppc_matchtype" value="<?php echo $ppc_matchtype;?>" />
+		<input type="hidden" name="ppc_network" value="<?php echo $ppc_network;?>" />  
+		<input type="hidden" name="ppc_placement" value="<?php echo $ppc_placement;?>" />
+		<input type="hidden" name="ppc_adgroup" value="<?php echo $ppc_adgroup;?>" />
+		<input type="hidden" name="ppc_adtag" value="<?php echo $ppc_adtag;?>" />
+		<input type="hidden" name="ckm_campaign_id" value="<?php echo $ckm_campaign_id;?>" />
+		<input type="hidden" name="ckm_key" value="<?php echo $ckm_key;?>" />
+<input type="hidden" id="country" name="country" value="USA">
+<input type="hidden" id="language" name="language" value="sp">
+<input type="hidden" id="thank_you_url" name="thank_you_url" value="<?php echo $thankYouPage;?>">
+<input type="hidden" id="channel" name="channel" value="">
+<input type="hidden" id="ckm_request_id" name="ckm_request_id" value="">
+<input type="hidden" id="vid" name="vid" value="107">
+<input type="hidden" id="ckm_subid" name="ckm_subid" value="2106">
+<input type="hidden" id="ckm_subid_2" name="ckm_subid_2" value="">
+<input type="hidden" id="ckm_subid_3" name="ckm_subid_3" value="">
+<input type="hidden" id="ckm_subid_4" name="ckm_subid_4" value="">
+<input type="hidden" id="ckm_subid_5" name="ckm_subid_5" value="">
+<input type="hidden" id="aff_id" name="aff_id" value="1242">
+<input type="hidden" id="route_type" name="route_type" value="data_direct">
+  <script>
+
+
+    $("#form, #contactform").submit(function(event) {
+
+      $.post("../../../submit.php", $("#form, #contactform").serialize())
+            .done(function(data) {
+                console.log(data);
+                //fix their json
+                data = data.replace("}1", "}");
+                var obj = jQuery.parseJSON(data);
+                console.log(obj);
+                console.log("Data Status: " + obj["Status"]);
+
+                if (obj["Status"] == "Success") {
+                    var img = new Image();
+                    img.onload = function(e) {
+                        console.log('<?php echo $thankYouPage; ?>');
+                    };
+                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
+                    window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
+                }
+                if (obj["Status"] == "Errors") {
+                    var imgf = new Image();
+                    imgf.onload = function(e) {};
+                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?formErrors';
+                    //parse the eror messages
+                    var errorMsg = obj["Errors"].toString().split(',')[0];
+                    if (errorMsg.split('|')[0] == 'Duplicate') {
+                        var imgE = new Image();
+                        imgE.onload = function(e) {};
+                        imgE.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?Duplicate_' + errorMsg.split('|')[1];
+                        var img = new Image();
+                        img.onload = function(e) {
+                        };
+                        img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
+                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
+
+                    } else {
+                        //disable the submit button, and alert the error out
+                        //	$('input[type="submit"]').prop('disabled', true);
+                        //	$('input[type="submit"]').css('opacity', .5);
+                        alert("There was a problem with your submisiion. Please refresh the page and try again Errors\n" + errorMsg);
+                    }
+
+                }
+
+                if (obj["Status"] == "Fail: Duplicate Lead") {
+                    var imgf = new Image();
+                    imgf.onload = function(e) {};
+                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
+                    //alert("Sorry, a record with your email address  is already in our system.\n Please visit https://www.consolidatedcredit.org/online-application/ to continue with your application,\n or check your email on the form and try again");
+                    var img = new Image();
+                    img.onload = function(e) {
+                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
+                    };
+                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
+
+                }
+                if (obj["Status"] == "Errors" && obj["Errors"] == "Duplicate Lead") {
+                    var imgf = new Image();
+                    imgf.onload = function(e) {};
+                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
+                    //alert("Sorry, a record with your email address  is already in our system.\n Please visit https://www.consolidatedcredit.org/online-application/ to continue with your application,\n or check your email on the form and try again");
+                    var img = new Image();
+                    img.onload = function(e) {
+                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
+                    };
+                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
+
+                }
+                if (obj["Status"] == "Fail: Bad Phone number") {
+                    var img = new Image();
+                    img.onload = function(e) {};
+                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?badPhoneNumber';
+                    alert("Please check your phone number and try again. 10 digits only (area code + phone number)");
+                    $('input[type="submit"]').prop('disabled', false);
+                    $('input[type="submit"]').val('START NOW');
+                }
+                if (obj["Status"] == "Fail: Invalid e-mail address format") {
+                    var img = new Image();
+                    img.onload = function(e) {};
+                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?invalidEmailformat';
+                    alert("Please check your email address and try again. (Format should match yourname@youremailprovider.com)");
+                    $('input[type="submit"]').prop('disabled', false);
+                    $('input[type="submit"]').val('START NOW');
+                }
+
+
+            });
+        event.preventDefault(); //stop the form from posting via DOM
+    });
+  </script>
                 </form>
             </div>
         </div>
