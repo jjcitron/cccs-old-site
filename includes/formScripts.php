@@ -96,6 +96,18 @@ if (!Modernizr.input.required || webkit == "Safari") {
     })();
 }
 
+function checkDuplicateLead(obj, callback) {
+    if (obj['Status'] == 'Errors') {
+        var img = new Image();
+        var img2 = new Image();
+        img.onload = function(e) {};
+        img2.onload = function(e) {};
+        img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
+        img2.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?formErrors';
+    }
+    return callback();
+}
+
 $(document).ready(function() {
 
     var onFire = false;
@@ -109,94 +121,32 @@ $(document).ready(function() {
         }
     });
 
+
     // process the form
     $("#form, #contactform").submit(function(event) {
+        $.post("submit.php", $("#form, #contactform").serialize()).done(function(data) {
+            data = data.replace("}1", "}");
+            var obj = jQuery.parseJSON(data);
+            console.log(obj);
+            console.log("Data Status: " + obj["Status"]);
+            var img = new Image();
+            var redirectUrl = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
 
+            if (obj["Status"] == "Fail: Bad Phone number" ||
+                  obj["Status"] == "Fail: Invalid e-mail address format" ||
+                  (("Errors" in obj) && obj["Errors"].indexOf("Invalid") != -1)) {
 
-        $.post("submit.php", $("#form, #contactform").serialize())
-            .done(function(data) {
-                //fix their json
-                data = data.replace("}1", "}");
-                var obj = jQuery.parseJSON(data);
-                console.log(obj);
-                console.log("Data Status: " + obj["Status"]);
-
-                if (obj["Status"] == "Success") {
-                    var img = new Image();
-                    img.onload = function(e) {
-                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-                    };
-                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-
-                }
-                if (obj["Status"] == "Errors") {
-                    var imgf = new Image();
-                    imgf.onload = function(e) {};
-                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?formErrors';
-                    //parse the eror messages
-                    var errorMsg = obj["Errors"].toString().split(',')[0];
-                    if (errorMsg.split('|')[0] == 'Duplicate') {
-                        var imgE = new Image();
-                        imgE.onload = function(e) {};
-                        imgE.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?Duplicate_' + errorMsg.split('|')[1];
-                        var img = new Image();
-                        img.onload = function(e) {
-                            window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-                        };
-                        img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-
-                    } else {
-                        //disable the submit button, and alert the error out
-                        //	$('input[type="submit"]').prop('disabled', true);
-                        //	$('input[type="submit"]').css('opacity', .5);
-                        alert("There was a problem with your submissiion. Please refresh the page and try again Errors\n" + errorMsg);
-                    }
-
-                }
-
-                if (obj["Status"] == "Fail: Duplicate Lead") {
-                    var imgf = new Image();
-                    imgf.onload = function(e) {};
-                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
-                    //alert("Sorry, a record with your email address  is already in our system.\n Please visit https://www.consolidatedcredit.org/online-application/ to continue with your application,\n or check your email on the form and try again");
-                    var img = new Image();
-                    img.onload = function(e) {
-                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-                    };
-                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-
-                }
-                if (obj["Status"] == "Errors" && obj["Errors"] == "Duplicate Lead") {
-                    var imgf = new Image();
-                    imgf.onload = function(e) {};
-                    imgf.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
-                    //alert("Sorry, a record with your email address  is already in our system.\n Please visit https://www.consolidatedcredit.org/online-application/ to continue with your application,\n or check your email on the form and try again");
-                    var img = new Image();
-                    img.onload = function(e) {
-                        window.location = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-                    };
-                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-
-                }
-                if (obj["Status"] == "Fail: Bad Phone number") {
-                    var img = new Image();
-                    img.onload = function(e) {};
-                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?badPhoneNumber';
-                    alert("Please check your phone number and try again. 10 digits only (area code + phone number)");
-                    $('input[type="submit"]').prop('disabled', false);
-                    $('input[type="submit"]').val('START NOW');
-                }
-                if (obj["Status"] == "Fail: Invalid e-mail address format") {
-                    var img = new Image();
-                    img.onload = function(e) {};
-                    img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?invalidEmailformat';
-                    alert("Please check your email address and try again. (Format should match yourname@youremailprovider.com)");
-                    $('input[type="submit"]').prop('disabled', false);
-                    $('input[type="submit"]').val('START NOW');
-                }
-
-
-            });
+                img.onload = function(e) {};
+                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?FAIL_+'+obj["Status"];
+                alert("There was a problem with your submissiion. Please refresh the page and try again Errors\n" + errorMsg);
+            } else {
+                img.onload = function(e) {};
+                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
+                checkDuplicateLead(obj, function () {
+                    window.location = redirectUrl;
+                });
+            }
+        });
         event.preventDefault(); //stop the form from posting via DOM
     });
 
