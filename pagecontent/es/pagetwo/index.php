@@ -458,73 +458,35 @@ m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBef
                         <div class="btnsubmit"><input id="submitButton" type="submit" value="" name="submitButton" class="online" ></div>
                         <div class="msg">&iquest;Ya hab&iacute;as comenzado? <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Contin&uacute;a aqu&iacute;</a></div>
                     </div>
+                    <div class="btnDisclaimer">Al enviar la información que se muestra arriba, usted autoriza mediante su firma electrónica a: Recibir llamadas de Consolidated Credit a través de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas estándar de celulares pueden ser aplicadas) a mi número residencial o celular, a través de llamadas realizadas en forma manual o mediante marcador automático. Yo entiendo que no estoy bajo ninguna obligación de comprar nada.</div>
 
-<div class="btnDisclaimer">Al enviar la información que se muestra arriba, usted autoriza mediante su firma electrónica a: Recibir llamadas de Consolidated Credit a través de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas estándar de celulares pueden ser aplicadas) a mi número residencial o celular, a través de llamadas realizadas en forma manual o mediante marcador automático. Yo entiendo que no estoy bajo ninguna obligación de comprar nada.</div>
-		<input type="hidden" name="SuccessURL" value="<?php echo $thankYouPage;?>" />  
-		<input type="hidden" name="submissionurl" value="<?php echo $submissionurl;?>" /> 
-		<input type="hidden" name="partnerid" value="<?php echo $partnerid;?>" />  		
-		<input type="hidden" name="ppc_keyword" value="<?php echo $ppc_keyword;?>" />  
-		<input type="hidden" name="ppc_matchtype" value="<?php echo $ppc_matchtype;?>" />
-		<input type="hidden" name="ppc_network" value="<?php echo $ppc_network;?>" />  
-		<input type="hidden" name="ppc_placement" value="<?php echo $ppc_placement;?>" />
-		<input type="hidden" name="ppc_adgroup" value="<?php echo $ppc_adgroup;?>" />
-		<input type="hidden" name="ppc_adtag" value="<?php echo $ppc_adtag;?>" />
-		<input type="hidden" name="ckm_campaign_id" value="<?php echo $ckm_campaign_id;?>" />
-		<input type="hidden" name="ckm_key" value="<?php echo $ckm_key;?>" />
-<input type="hidden" id="country" name="country" value="USA">
-<input type="hidden" id="language" name="language" value="sp">
-<input type="hidden" id="thank_you_url" name="thank_you_url" value="<?php echo $thankYouPage;?>">
-<input type="hidden" id="channel" name="channel" value="">
-<input type="hidden" id="ckm_request_id" name="ckm_request_id" value="">
-<input type="hidden" id="vid" name="vid" value="107">
-<input type="hidden" id="ckm_subid" name="ckm_subid" value="2106">
-<input type="hidden" id="ckm_subid_2" name="ckm_subid_2" value="">
-<input type="hidden" id="ckm_subid_3" name="ckm_subid_3" value="">
-<input type="hidden" id="ckm_subid_4" name="ckm_subid_4" value="">
-<input type="hidden" id="ckm_subid_5" name="ckm_subid_5" value="">
-<input type="hidden" id="aff_id" name="aff_id" value="1242">
-<input type="hidden" id="route_type" name="route_type" value="data_direct">
-  <script>
-    function checkDuplicateLead(obj, callback) {
-        if (obj['Status'] == 'Errors') {
-            var img = new Image();
-            var img2 = new Image();
-            img.onload = function(e) {};
-            img2.onload = function(e) {};
-            img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
-            img2.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?formErrors';
-        }
-        return callback();
-    }
-
-
-    $("#form, #contactform").submit(function(event) {
-        $.post("../../../submit.php", $("#form, #contactform").serialize()).done(function(data) {
-            data = data.replace("}1", "}");
-            var obj = jQuery.parseJSON(data);
-            console.log(obj);
-            console.log("Data Status: " + obj["Status"]);
-            var img = new Image();
-            var redirectUrl = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-
-            if (obj["Status"] == "Fail: Bad Phone number" ||
-                  obj["Status"] == "Fail: Invalid e-mail address format" ||
-                  (("Errors" in obj) && obj["Errors"].indexOf("Invalid") != -1)) {
-
-                img.onload = function(e) {};
-                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?FAIL_+'+obj["Status"];
-                alert("There was a problem with your submissiion. Please refresh the page and try again Errors\n" + errorMsg);
-            } else {
-                img.onload = function(e) {};
-                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-                checkDuplicateLead(obj, function () {
-                    window.location = redirectUrl;
-                });
-            }
-        });
-        event.preventDefault(); //stop the form from posting via DOM
-    });
-  </script>
+                    <input type="hidden" name="SuccessURL" value="<?php echo $thankYouPage;?>" />  
+                    <input type="hidden" name="submissionurl" value="<?php echo $submissionurl;?>" /> 
+                    <input type="hidden" name="partnerid" value="<?php echo $partnerid;?>" />  		
+                    <input type="hidden" name="ppc_keyword" value="<?php echo $ppc_keyword;?>" />  
+                    <input type="hidden" name="ppc_matchtype" value="<?php echo $ppc_matchtype;?>" />
+                    <input type="hidden" name="ppc_network" value="<?php echo $ppc_network;?>" />  
+                    <input type="hidden" name="ppc_placement" value="<?php echo $ppc_placement;?>" />
+                    <input type="hidden" name="ppc_adgroup" value="<?php echo $ppc_adgroup;?>" />
+                    <input type="hidden" name="ppc_adtag" value="<?php echo $ppc_adtag;?>" />
+                    <input type="hidden" name="ckm_campaign_id" value="<?php echo $ckm_campaign_id;?>" />
+                    <input type="hidden" name="ckm_key" value="<?php echo $ckm_key;?>" />
+                    <input type="hidden" id="country" name="country" value="USA">
+                    <input type="hidden" id="language" name="language" value="sp">
+                    <input type="hidden" id="thank_you_url" name="thank_you_url" value="<?php echo $thankYouPage;?>">
+                    <input type="hidden" id="channel" name="channel" value="">
+                    <input type="hidden" id="ckm_request_id" name="ckm_request_id" value="">
+                    <input type="hidden" id="vid" name="vid" value="107">
+                    <input type="hidden" id="ckm_subid" name="ckm_subid" value="2106">
+                    <input type="hidden" id="ckm_subid_2" name="ckm_subid_2" value="">
+                    <input type="hidden" id="ckm_subid_3" name="ckm_subid_3" value="">
+                    <input type="hidden" id="ckm_subid_4" name="ckm_subid_4" value="">
+                    <input type="hidden" id="ckm_subid_5" name="ckm_subid_5" value="">
+                    <input type="hidden" id="aff_id" name="aff_id" value="1242">
+                    <input type="hidden" id="route_type" name="route_type" value="data_direct">
+                    <script>
+                      <?php include($_SERVER['DOCUMENT_ROOT'].'/includes/formajaxsubmit.php') ?>
+                    </script>
                 </form>
             </div>
         </div>

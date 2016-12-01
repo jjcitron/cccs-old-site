@@ -96,17 +96,6 @@ if (!Modernizr.input.required || webkit == "Safari") {
     })();
 }
 
-function checkDuplicateLead(obj, callback) {
-    if (obj['Status'] == 'Errors') {
-        var img = new Image();
-        var img2 = new Image();
-        img.onload = function(e) {};
-        img2.onload = function(e) {};
-        img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?existingEmailFound';
-        img2.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?formErrors';
-    }
-    return callback();
-}
 
 $(document).ready(function() {
 
@@ -123,32 +112,7 @@ $(document).ready(function() {
 
 
     // process the form
-    $("#form, #contactform").submit(function(event) {
-        $.post("submit.php", $("#form, #contactform").serialize()).done(function(data) {
-            data = data.replace("}1", "}");
-            var obj = jQuery.parseJSON(data);
-            console.log(obj);
-            console.log("Data Status: " + obj["Status"]);
-            var img = new Image();
-            var redirectUrl = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
-
-            if (obj["Status"] == "Fail: Bad Phone number" ||
-                  obj["Status"] == "Fail: Invalid e-mail address format" ||
-                  (("Errors" in obj) && obj["Errors"].indexOf("Invalid") != -1)) {
-
-                img.onload = function(e) {};
-                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?FAIL_+'+obj["Status"];
-                alert("There was a problem with your submissiion. Please refresh the page and try again Errors\n" + errorMsg);
-            } else {
-                img.onload = function(e) {};
-                img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?OID_' + obj["LeadID"];
-                checkDuplicateLead(obj, function () {
-                    window.location = redirectUrl;
-                });
-            }
-        });
-        event.preventDefault(); //stop the form from posting via DOM
-    });
+    <?php echo include('formajaxsubmit.php'); ?>
 
 });
 </script>
