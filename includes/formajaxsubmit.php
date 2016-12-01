@@ -11,9 +11,18 @@ function checkDuplicateLead(obj, callback) {
 }
 
 $("#form, #contactform").submit(function(event) {
-    $.post("submit.php", $("#form, #contactform").serialize()).done(function(data) {
+    var submissionUrl = "<?php echo (isset($submitPath)) ? $submitPath : "submit.php"; ?>";
+    $.post(submissionUrl, $("#form, #contactform").serialize()).done(function(data) {
         data = data.replace("}1", "}");
-        var obj = jQuery.parseJSON(data);
+
+        try {
+            var obj = jQuery.parseJSON(data);
+        } catch(e) {
+            console.log(data);
+            alert("There was a problem with your submission. Check your phone number or email");
+            return;
+        }
+
         var img = new Image();
         var redirectUrl = '<?php echo $thankYouPage; ?>#?id=' + obj["LeadID"] + '&key=' + obj["DebtAnalysisToken"];
         var errorMsg = "";

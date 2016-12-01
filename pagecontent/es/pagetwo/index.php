@@ -1,6 +1,7 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/includes/pageSettings.php');
-$thankYouPage = $currentDir.'thankyou.php'
+$thankYouPage = $currentDir.'thankyou.php';
+$submitPath = '../../../submit.php';
 
 ?>
 
