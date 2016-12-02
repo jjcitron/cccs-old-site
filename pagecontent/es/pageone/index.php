@@ -30,7 +30,7 @@ $submitPath = '../../../submit.php';
         <a href="http://www.facebook.com/ConsolidarCredito" target="_blank"><img src="http://debtfree.consolidatedcredit.org/content/themes/ppc-sindeudas/ico-fc.png"></a> <a href="https://twitter.com/#!/ConsolidatedESP/" target="_blank"><img src="http://debtfree.consolidatedcredit.org/content/themes/ppc-sindeudas/ico-tw.png"></a> <a href="https://www.pinterest.com/consolidatedspa/" target="_blank"><img src="http://debtfree.consolidatedcredit.org/content/themes/ppc-sindeudas/ico-pt.png"></a> <a href="https://plus.google.com/b/100918713656573936496/100918713656573936496/posts" target="_blank"><img src="http://debtfree.consolidatedcredit.org/content/themes/ppc-sindeudas/ico-gp.png"></a> <a href="http://www.youtube.com/ConsolidatedEspanol" target="_blank"><img src="http://debtfree.consolidatedcredit.org/content/themes/ppc-sindeudas/ico-yt.png"></a>
         </div>
     	<div class="phone">
-    		Llámanos al
+    		Ll&aacute;manos al
     		<span><?php echo $thePhoneNumber ?></span>
     	</div>
     </div>	
@@ -42,8 +42,8 @@ $submitPath = '../../../submit.php';
     		<img src="images/banner-header.jpg" class="banner-img-family" alt="¿Tienes deudas de tarjetas de crédito?">
     	</div>
     	<div class="banner-text">
-    		<h1>¿Tienes deudas de
-    		tarjetas de crédito?</h1>
+    		<h1>&iquest;Tienes deudas de
+    		tarjetas de cr&eacute;dito?</h1>
     		<p>Conozca las opciones disponibles que lo ayudarán a eliminar sus deudas</p>
     	</div>
     </div>
@@ -57,17 +57,17 @@ $submitPath = '../../../submit.php';
 <div class="st-col1">
 <h2>3 Simples Pasos:</h2>
 <ul>
-<li>Crea tu análisis de deuda gratis.</li>
-<li>Recibe nuestras opciones de consolidación. </li>
+<li>Crea tu an&aacute;lisis de deuda gratis.</li>
+<li>Recibe nuestras opciones de consolidaci&oacute;n. </li>
 <li>Disminuye tus pagos mensuales.</li>
 </ul>
 </div>
 <div class="st-col2">
-<h1>Obtén tu consulta de deuda gratis, y analiza tus opciones</h1>
+<h1>Obt&eacute;n tu consulta de deuda gratis, y analiza tus opciones</h1>
 <form id="form" class="formsteps Formisimo_clocked_82809" method="post" usetooltips="false" id="form" novalidate="novalidate">
 <div class="col1">
 <div>
-<h3>Correo Electrónico</h3>
+<h3>Correo Electr&oacute;nico</h3>
 <input type="text" id="email" name="email">
 </div>
  
@@ -339,7 +339,7 @@ $submitPath = '../../../submit.php';
 </div>
 </div>
 <div id="optIn">
-<input type="checkbox" id="opt_in" name="opt_in" value="false"> Sí, me gustaría recibir notificaciones de <br>Consolidated Credit.
+<input type="checkbox" id="opt_in" name="opt_in" value="false"> S&iacute;, me gustar&iacute;a recibir notificaciones de <br>Consolidated Credit.
 </div>
 </div>
 <div class="col2">
@@ -355,18 +355,18 @@ $submitPath = '../../../submit.php';
 </div>
 <div class="subcol3">
 <div>
-<h3>Teléfono </h3>
+<h3>Tel&eacute;fono</h3>
 <input type="text" id="primary_phone" name="phone_home" maxlength="10">
 </div>
 <div>
-<h3>Código postal </h3>
+<h3>C&oacute;digo postal</h3>
 <input type="text" id="zip" name="zip" maxlength="5">
 </div>
 </div>
 <div class="btnsubmit"><input id="submitButton" type="submit" value="" name="submitButton" class="online"></div>
-<div class="msg">¿Ya habías comenzado? <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Continúa aquí</a></div>
+<div class="msg">&iquest;Ya hab&iacute;as comenzado? <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Contin&uacute;a aqu&iacute;</a></div>
 </div>
-<div class="btnDisclaimer">Al enviar la información que se muestra arriba, usted autoriza mediante su firma electrónica a: Recibir llamadas de Consolidated Credit a través de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas estándar de celulares pueden ser aplicadas) a mi número residencial o celular, a través de llamadas realizadas en forma manual o mediante marcador automático. Yo entiendo que no estoy bajo ninguna obligación de comprar nada.</div>
+<div class="btnDisclaimer">Al enviar la informaci&oacute;n que se muestra arriba, usted autoriza mediante su firma electr&oacute;nica a: Recibir llamadas de Consolidated Credit a trav&eacute;s de un agente en vivo, voz artificial o pregrabada, y /o mensaje de texto SMS (tarifas est&aacute;ndar de celulares pueden ser aplicadas) a mi n&uacute;mero residencial o celular, a trav&eacute;s de llamadas realizadas en forma manual o mediante marcador autom&aacute;tico. Yo entiendo que no estoy bajo ninguna obligaci&oacute;n de comprar nada.</div>
 		<input type="hidden" name="SuccessURL" value="<?php echo $thankYouPage;?>" />  
 		<input type="hidden" name="submissionurl" value="<?php echo $submissionurl;?>" /> 
 		<input type="hidden" name="partnerid" value="<?php echo $partnerid;?>" />  		
@@ -409,7 +409,7 @@ $submitPath = '../../../submit.php';
         <div class="testimonios">
         <div class="box box-01">
             <div>
-                <p class="testimonio-text">“Consolidated Credit me ha salvado la vida. Estoy muy agradecida por toda su ayuda.”</p>
+                <p class="testimonio-text">"Consolidated Credit me ha salvado la vida. Estoy muy agradecida por toda su ayuda."</p>
                 <img src="images/testimonios/01.jpg">
                 <p class="author">- Johanna S.</p>
             </div>
@@ -417,7 +417,7 @@ $submitPath = '../../../submit.php';
 
         <div class="box box-02">
             <div>
-                <p class="testimonio-text">“Es maravilloso ver nuestros balances disminuir cada mes!. Gracias Consolidated Credit!”</p>
+                <p class="testimonio-text">"Es maravilloso ver nuestros balances disminuir cada mes!. Gracias Consolidated Credit!"</p>
                 <img src="images/testimonios/02.jpg">
                 <p class="author">- Agnes S.</p>
             </div>
@@ -425,7 +425,7 @@ $submitPath = '../../../submit.php';
 
         <div class="box box-03">
             <div>
-                <p class="testimonio-text">“¡Es un placer trabajar con Consolidated Credit y su servicio al cliente es genial!”</p>
+                <p class="testimonio-text">"&iexcl;Es un placer trabajar con Consolidated Credit y su servicio al cliente es genial!"</p>
                 <img src="images/testimonios/03.jpg">
                 <p class="author">- S. Tapia.</p>
             </div>
@@ -433,7 +433,7 @@ $submitPath = '../../../submit.php';
 
         <div class="box box-04">
             <div>
-            <p class="testimonio-text">“¡Excelente servicio!. Estamos a punto de terminar el programa de manejo de deudas de Consolidated Credit. Nos salvó de la ruina financiera.”</p>
+            <p class="testimonio-text">"&iexcl;Excelente servicio!. Estamos a punto de terminar el programa de manejo de deudas de Consolidated Credit. Nos salv&oacute; de la ruina financiera."</p>
             <img src="images/testimonios/04.jpg">
             <p class="author">- Eduardo W.</p>
             </div>
@@ -441,7 +441,7 @@ $submitPath = '../../../submit.php';
 
         <div class="box box-05">
             <div>
-                <p class="testimonio-text">“Consolidated credit me ayudó a saldar mis deudas y ahora puedo mantener mi  cabeza en alto porque, estoy pagando mis cuentas a tiempo. Gracias Consolidated Credit.”</p>
+                <p class="testimonio-text">"Consolidated credit me ayud&oacute; a saldar mis deudas y ahora puedo mantener mi cabeza en alto porque, estoy pagando mis cuentas a tiempo. Gracias Consolidated Credit."</p>
                 <img src="images/testimonios/05.jpg">
                 <p class="author">- Angela W.</p>
             </div>
@@ -462,27 +462,27 @@ $submitPath = '../../../submit.php';
         <strong>Consolidar</strong> tus deudas en un solo pago mensual</div>
         <div class="item">
         <img src="images/iconos/03.png" alt="Reducir tus deudas de tarjetas de crédito">
-        <strong>Reducir</strong> tus deudas de tarjetas de crédito</div>
+        <strong>Reducir</strong> tus deudas de tarjetas de cr&eacute;dito</div>
         <div class="item">
         <img src="images/iconos/04.png" alt="Bajar las tasas de interés">
-        <strong>Bajar</strong> las tasas de interés</div>
+        <strong>Bajar</strong> las tasas de inter&eacute;s</div>
         <div class="item">
         <img src="images/iconos/05.png" alt="Evitar la bancarrota y Reconstruir tu Crédito">
-        <strong>Evitar</strong> la bancarrota y Reconstruir tu Crédito</div>
+        <strong>Evitar</strong> la bancarrota y Reconstruir tu Cr&eacute;dito</div>
     </div>
 </section>
 
 <section class="orange">
     <div class="container">
-        Reduzca su pago total de tarjetas de crédito hasta un 30% o un 50%
+        Reduzca su pago total de tarjetas de cr&eacute;dito hasta un 30% o un 50%
     </div>  
 </section>
 
 <section class="daniel-rita">
     <div class="container">
         <div class="episodios">
-            <h2>Educación Financiera</h2>
-            <h3>“La historia de Daniel el </br>gastador y Rita la ahorradora”</h3>
+            <h2>Educaci&oacute;n Financiera</h2>
+            <h3>"La historia de Daniel el </br>gastador y Rita la ahorradora"</h3>
             <div class="thumb-ep">
 
 <a href="http://espanol.consolidatedcredit.org/daniel-y-rita/episodio-1_mi-primer-tarjeta-de-credito/">
@@ -512,7 +512,7 @@ $submitPath = '../../../submit.php';
 
 <section class="logos">
     <div class="container">
-        <p>Cómo lo vió:</p>
+        <p>C&oacute;mo lo vi&oacute;:</p>
         <img src="images/logos/logo-telemundo-transparent.png">
         <img src="images/logos/hola-logo.png">
         <img src="images/logos/univision-logo.png">
@@ -522,13 +522,13 @@ $submitPath = '../../../submit.php';
 <footer class="text-center">
     <div class="container">
         <div class="links">
-        <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Acceso Clientes </a> | <a href="http://espanol.consolidatedcredit.org/politica-de-privacidad/?partnerid=2106">Política de Privacidad</a> | <a href="http://espanol.consolidatedcredit.org/aprendizaje-sobre-deudas/?partnerid=2106">Aprendizaje sobre Deudas</a> | <a href="http://espanol.consolidatedcredit.org/quienes-somos/?partnerid=2106">Conózcanos</a>
+        <a href="http://www.consolidatedcredit.org/debt-analysis-spanish/userlogin/?partnerid=2106">Acceso Clientes </a> | <a href="http://espanol.consolidatedcredit.org/politica-de-privacidad/?partnerid=2106">Pol&iacute;tica de Privacidad</a> | <a href="http://espanol.consolidatedcredit.org/aprendizaje-sobre-deudas/?partnerid=2106">Aprendizaje sobre Deudas</a> | <a href="http://espanol.consolidatedcredit.org/quienes-somos/?partnerid=2106">Con&oacute;zcanos</a>
         </div>
     </div>
     <div class="container">
         <img src="images/logos/logos-footer.png" class="logos">
         <div class="copyright">
-Copyright © Consolidated Credit Counseling Services, Inc. <br> Todos los derechos reservados.<br> 5701 West Sunrise Blvd. Fort Lauderdale, FL 33313
+Copyright &copy; Consolidated Credit Counseling Services, Inc. <br> Todos los derechos reservados.<br> 5701 West Sunrise Blvd. Fort Lauderdale, FL 33313
 </div>
     </div>
 </footer>

@@ -537,7 +537,7 @@ footer img.logos {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
+        display: inline-block;
     }
 }
 

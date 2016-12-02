@@ -573,7 +573,7 @@ form.formsteps .col1 > div, form.formsteps .col2 > div {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
+        display: inline-block;
     }
 }
 
