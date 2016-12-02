@@ -42,7 +42,7 @@ $("#form, #contactform").submit(function(event) {
              */
             errorMsg = obj["Errors"].toString().split(',')[0];
             img.onload = function(e) {};
-            img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?FAIL_+'+obj["Status"];
+            img.src = 'http://' + window.location.hostname + '/proxy-static/includes/trk.php?FAIL_'+obj["Errors"];
             alert("There was a problem with your submissiion. Please refresh the page and try again Errors\n" + errorMsg);
         } else {
             //Else, Redirect on successful or duplicate leads
