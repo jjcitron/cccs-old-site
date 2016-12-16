@@ -2,6 +2,7 @@
 
 $location = explode('-', $currentPage);
 $location = $location[1];
+
 //echo $currentPage;
 
 switch($location){
@@ -82,7 +83,8 @@ switch($location){
 
 }
 
-$thankYouPage ='geo_thanks-'.$location;
+//$thankYouPage ='geo_thanks-'.$location;
+$thankYouPage ='geo_thanks-'.explode("?", $location)[0];
 if($detect->isMobile()){
 	$thankYouPage = $thankYouPage.'?mobile';
 }
