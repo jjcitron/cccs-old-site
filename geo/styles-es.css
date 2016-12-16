@@ -719,6 +719,7 @@ input[type="submit"].online{
     font-size: 7pt;
     color: #ffffff;
 	padding:10px 0;
+  clear: both;
 }
 #form a.already-started
 {
