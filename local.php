@@ -104,14 +104,14 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 						var lang = val.options[val.selectedIndex].value
 						var img = new Image();
             img.onload = function() { 
-              window.location.href = '<?php echo $currentDir ?>?lang='+ lang; console.log('switched!!')
             };
 						img.src = '/proxy-static/includes/trk.php?languageSwitched_'+lang;
+              window.location.href = '<?php echo $currentDir ?>?lang='+ lang; console.log('switched!!')
 					}
 				</script>
 
 				<select class="lang" onchange="change(this)">
-					<?php if($lang=='en'){ echo '<option value="en">Inglés</option><option value="es" >Español</option>'; }
+					<?php if($lang=='en'){ echo '<option value="en">English</option><option value="es" >Spanish</option>'; }
 					else{ echo '<option value="es" >Español</option><option value="en" >Inglés</option>'; }?> 
 				</select>​
 			</div>
