@@ -100,10 +100,12 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 				?-->
 				<!--Code will only fire in proxy, because of the pixel src 'img.src' below -->
 				<script>
-					function change(val){
+          function change(val){
 						var lang = val.options[val.selectedIndex].value
 						var img = new Image();
-						img.onload = function(){window.location = '?lang='+ lang; console.log('switched!!')};
+            img.onload = function() { 
+              window.location.href = '<?php echo $currentDir ?>?lang='+ lang; console.log('switched!!')
+            };
 						img.src = '/proxy-static/includes/trk.php?languageSwitched_'+lang;
 					}
 				</script>
@@ -118,21 +120,21 @@ if(preg_match('/(?i)msie [8]/',$_SERVER['HTTP_USER_AGENT'])){
 
 	<nav id="nav" class="menu">
 		<div class="con" class="menu">	
-			<ul>
+      <ul>
 			<?php if($lang=='es'){
 				echo 
-				'<li><a href="'.$currentDir.'local-'.$location.'">Incio</a></li>
-				<li><a href="'.$currentDir.'history-'.$location.'">20 A&#241;os De Historia</a></li>
-				<li><a href="'.$currentDir.'questions-'.$location.'">Preguntas</a></li>
-				<li><a href="'.$currentDir.'estimator-'.$location.'">Simulador De Ahorros</a></li>
-				<li><a href="'.$currentDir.'clients-'.$location.'">Clientes Que Hemos Ayudado</a></li>';
+				'<li><a href="local-'.$location.'">Incio</a></li>
+				<li><a href="history-'.$location.'">20 A&#241;os De Historia</a></li>
+				<li><a href="questions-'.$location.'">Preguntas</a></li>
+				<li><a href="estimator-'.$location.'">Simulador De Ahorros</a></li>
+				<li><a href="clients-'.$location.'">Clientes Que Hemos Ayudado</a></li>';
 				}else{
 					echo
-					'<li><a href="'.$currentDir.'local-'.$location.'">Home</a></li>
-					<li><a href="'.$currentDir.'history-'.$location.'">Our 20 Year History</a></li>
-					<li><a href="'.$currentDir.'questions-'.$location.'">Typical Questions</a></li>
-					<li><a href="'.$currentDir.'estimator-'.$location.'">Savings Estimator</a></li>
-					<li><a href="'.$currentDir.'clients-'.$location.'">Clients We\'ve Helped</a></li>';
+					'<li><a href="local-'.$location.'">Home</a></li>
+					<li><a href="history-'.$location.'">Our 20 Year History</a></li>
+					<li><a href="questions-'.$location.'">Typical Questions</a></li>
+					<li><a href="estimator-'.$location.'">Savings Estimator</a></li>
+					<li><a href="clients-'.$location.'">Clients We\'ve Helped</a></li>';
 					}
 				?>
 			</ul>
