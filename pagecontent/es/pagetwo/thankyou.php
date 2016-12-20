@@ -10,7 +10,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/pageSettings.php');
 <html class="no-js">
 <!--<![endif]-->
 <head>
-    <title>Consolidated Credit Counseling</title>
+    <title>Gracias</title>
     <meta name="description" content="" />
     <meta name="keywords"  content="" />
     <meta name="robots"  content="" />

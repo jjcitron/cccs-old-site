@@ -12,7 +12,7 @@ $submitPath = '../../../submit.php';
 <html class="no-js">
 <!--<![endif]-->
 <head>
-    <title>Consolidated Credit Counseling</title>
+    <title>Consolidación de Deudas de Tarjetas de Crédito</title>
     <meta name="description" content="" />
     <meta name="keywords"  content="" />
     <meta name="robots"  content="" />

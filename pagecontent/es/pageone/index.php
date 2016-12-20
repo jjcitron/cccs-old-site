@@ -7,7 +7,7 @@ $submitPath = '../../../submit.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Landing Page</title>
+	<title>Consolidación de Deudas de Tarjetas de Crédito</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src="../../../js/modernizr.js"></script>
