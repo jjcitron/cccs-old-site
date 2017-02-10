@@ -25,7 +25,10 @@ function setParams($p){
 		$currentPage  = substr($currentPage, 0, strpos($currentPage, '?'));
 	}*/
 	
-	$currentPage = str_replace('/','',$_SERVER['REQUEST_URI']);
+$currentPage = str_replace('/','',$_SERVER['REQUEST_URI']);
+if(strpos($currentPage, '?')>1){
+  $currentPage  = substr($currentPage, 0, strpos($currentPage, '?'));
+}
 	//var_dump($location);
 	//For local testing
 	$fullURL = explode('?', 'http://' .$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
