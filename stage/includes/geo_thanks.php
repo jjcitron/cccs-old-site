@@ -21,7 +21,7 @@ if($lang=="es"){echo '
 	
 <!--	
 	<script>
-		document.write('<a class="button" target="_blank" href="https://www.consolidatedcredit.org/online-application/'+window.location.hash.substr(1)+'&partnerid=<?php echo $partnerid;?>">Continue Your Analysis</a>');
+		document.write('<a class="button" target="_blank" href="https://www.consolidatedcredit.org/online-application/'+window.location.hash.substr(1)+'&partnerid=<!?php echo $partnerid;?>">Continue Your Analysis</a>');
 	</script>
 -->
 

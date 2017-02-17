@@ -11,8 +11,8 @@ $arrow = '';
 $bottom = '<div class="bottom"><p style="padding-top:5px">
             Once we get in touch, the person you speak to will be your personal credit counselor
             for the rest of your journey out of debt with us. The first call will focus on getting
-            the rest of the information we need to complete your Debt Analysis. You can get
-            a head start by clicking the Continue Your Analysis button.</p>
+            the rest of the information we need to complete your Debt Analysis.<span style="display:none;">You can get
+            a head start by clicking the Continue Your Analysis button.</span></p>
 			<p style="padding-top:5px">
             We are here to help, so please don’t hesitate to contact us with any questions or
             concerns you have. We’ll talk to you soon and look forward to helping you reach
