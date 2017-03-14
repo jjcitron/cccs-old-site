@@ -543,7 +543,7 @@ select.lang {
     right: 0;
     float: left;
     width: 400px;
-    height: 425px;
+    height: 510px;
 	margin-left:20px;
 	border-radius:5px;
 	position: relative;
@@ -725,14 +725,15 @@ input[type="submit"].online{
     text-decoration: underline;
 }
 
+
 /*---------eKomi Widget---------*/
 #form .eKomi {
-    position: absolute;
-	top:70px; 
+    position: relative;
 }
 #form .eKomi img {
 	width:150px; 
 	border-radius:5px;
+	margin-top:25px
 }
 /*------------------------------*/
 
