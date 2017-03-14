@@ -119,11 +119,12 @@
             <div class="formRight">
                 <input id="submitButton" type="submit" value="Start Now" processtext="Processing" name="submitButton" class="online" />
 
-				<div class="consent">
-                    I consent to receive calls from Consolidated Credit from an automatic dialing system.
-                    I understand I am under no obligation to purchase.
-                </div>
             </div>
+			
+				<div class="consent">
+<p>By submitting your information above you consent by electronic signature to: receive calls from Consolidated Credit from a live agent, artificial or prerecorded voice, and/or SMS text (standard cellular rates may apply) at my residential or cellular number, dialed manually or by autodialer. I understand that I am under no obligation to purchase anything.</p>
+<p class="">We take your <a style="color:inherit" href="http://www.consolidatedcredit.org/privacy-policy/" target="_blank">privacy</a> seriously</p>
+                </div>
 			<div class="eKomi" id="eKomiWidget_default"></div>
         </div>
 

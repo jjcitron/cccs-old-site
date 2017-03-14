@@ -32,13 +32,14 @@
 		</div>
 		</p>
 		
-		<p class="consent">By clicking "START NOW", I consent to receive calls from Consolidated Credit through the use of an automatic dialing system at the telephone number provided above. I understand that I am never under any obligation to purchase anything.</p>
+		<p class="consent">By submitting your information above you consent by electronic signature to: receive calls from Consolidated Credit from a live agent, artificial or prerecorded voice, and/or SMS text (standard cellular rates may apply) at my residential or cellular number, dialed manually or by autodialer. I understand that I am under no obligation to purchase anything.</p>
 		<p align="center"><button class="button" type="submit" class="btn btn-primary">START NOW</button></p>
 		
 		<div class="yel">
 			<input class="checkbox" type="checkbox" name="language" value="sp"/>
 			<p>Haga clic aqu&iacute; si desea hablar con un consejero que hable espa&ntilde;ol</p></br>
 			<p class="fcta">Call right now and speak to a debt specialist</br></br><a href="tel:<?php echo str_replace("-", "", $thePhoneNumber);?>"><?php echo $thePhoneNumber;?></a></p>
+			<p class="">We take your <a style="color:inherit" href="http://www.consolidatedcredit.org/privacy-policy/" target="_blank">privacy</a> seriously</p>
 		</div>
 	</fieldset>
 	</form>               
