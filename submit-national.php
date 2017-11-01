@@ -62,8 +62,8 @@ if (isset($phone_work)){
 if(is_numeric(trim($fields['debtamount']))){
 	//echo $fields['debtamount']. 'is a number';
 }
-else{ if(is_numeric(preg_replace('/[^A-Za-z0-9\-]/',"",trim($debtamount)))){
-	$fields['debtamount'] =  urlencode(preg_replace('/[^A-Za-z0-9\-]/',"",trim($debtamount)));
+else{ if(is_numeric(preg_replace('/[^A-Za-z0-9\.]/',"",trim($debtamount)))){
+	$fields['debtamount'] =  urlencode(preg_replace('/[^A-Za-z0-9\.]/',"",trim($debtamount)));
 	//echo $fields['debtamount']. 'is a number, cleaned up invalid charachters';
 	} 
 	else{
