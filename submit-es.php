@@ -51,6 +51,22 @@ $fields = array(
 						'ckm_campaign_id'=>urlencode($ckm_campaign_id),
 						'ckm_key'=>urlencode($ckm_key)
 				);
+				if (isset($phone_work)){
+  $fields['phone_work'] = urlencode($phone_work);
+}
+//check debt amount				
+//echo $fields['debtamount'].'</br>';
+if(is_numeric(trim($fields['debtamount']))){
+	//echo $fields['debtamount']. 'is a number';
+}
+else{ if(is_numeric(preg_replace('/[^A-Za-z0-9\-]/',"",trim($debtamount)))){
+	$fields['debtamount'] =  urlencode(preg_replace('/[^A-Za-z0-9\-]/',"",trim($debtamount)));
+	//echo $fields['debtamount']. 'is a number, cleaned up invalid charachters';
+	} 
+	else{
+	//	echo $fields['debtamount']. 'is not a number, setting to 10,000';
+		$fields['debtamount'] = 10000;}
+}
 $fields_string = '';
 //url-ify the data for the POST
 foreach($fields as $key=>$value) { 
